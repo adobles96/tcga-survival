@@ -1,7 +1,7 @@
 from concurrent.futures import ThreadPoolExecutor
 import os
 
-import gigapath
+import gigapath.slide_encoder as slide_encoder
 import numpy as np
 import pandas as pd
 import openslide
@@ -33,7 +33,7 @@ class WSIProcessor:
             transforms.CenterCrop(224),
             transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
         ])
-        self.slide_encoder = gigapath.slide_encoder.create_model(
+        self.slide_encoder = slide_encoder.create_model(
             "hf_hub:prov-gigapath/prov-gigapath", "gigapath_slide_enc12l768d", 1536
         )
         self.tile_encoder.eval()
