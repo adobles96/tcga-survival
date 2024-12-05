@@ -119,7 +119,9 @@ def process_cases(cases):
     return df
 
 
-def get_case_files(case_id):
+def get_case_files(case_id: str | list[str]):
+    if isinstance(case_id, str):
+        case_id = [case_id]
     # Define the filters for the query
     filters = {
         "op": "and",
@@ -128,7 +130,7 @@ def get_case_files(case_id):
                 "op": "in",
                 "content": {
                     "field": "cases.case_id",
-                    "value": [case_id]
+                    "value": case_id
                 }
             },
             {
@@ -149,7 +151,9 @@ def get_case_files(case_id):
     # Define the parameters for the request
     params = {
         "filters": filters,
-        "fields": "file_id,file_name,experimental_strategy,data_type,data_format,file_size",
+        "fields": (
+            "cases.case_id,file_id,file_name,experimental_strategy,data_type,data_format,file_size"
+        ),
         "format": "JSON",
         "size": "1000"
     }
@@ -165,19 +169,22 @@ def get_case_files(case_id):
         response.raise_for_status()
 
 
-def download_file(file_id, file_type, dir):
+def download_file(file_id, file_type, dir, file_size=None):
     url = f"https://api.gdc.cancer.gov/data/{file_id}"
     path = os.path.join(os.getcwd(), dir, file_id + f'.{file_type.lower()}')
+    chunksize = 16_384
 
     # Make the request to the GDC API
     response = requests.get(url, stream=True)
 
     # Check if the request was successful
     if response.status_code == 200:
+        total = (file_size // chunksize) + 1 if file_size is not None else None
         # Write the file content to the specified path
         with open(path, 'wb') as file:
-            for chunk in response.iter_content(chunk_size=8192):
+            for chunk in tqdm(
+                response.iter_content(chunk_size=chunksize), desc='Downloading file', total=total
+            ):
                 file.write(chunk)
-        print(f"File downloaded successfully to {path}")
     else:
         response.raise_for_status()
