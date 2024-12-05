@@ -1,12 +1,17 @@
 from concurrent.futures import ThreadPoolExecutor
+import os
 
-# import gigapath
+import gigapath
 import numpy as np
+import pandas as pd
 import openslide
-# import timm
+import timm
 import torch
 from torchvision import transforms
 from torchvision.transforms.functional import to_tensor
+from tqdm import tqdm
+
+import data_utils
 
 
 class WSIProcessor:
@@ -22,19 +27,18 @@ class WSIProcessor:
         self.tile_size = tile_size
         self.overlap = overlap
         self.max_tiles = max_tiles
-        # self.tile_encoder = timm.create_model("hf_hub:prov-gigapath/prov-gigapath", pretrained=True)
-        self.tile_encoder = lambda x: x
+        self.tile_encoder = timm.create_model("hf_hub:prov-gigapath/prov-gigapath", pretrained=True)
         self.tile_transforms = transforms.Compose([
             transforms.Resize(256, interpolation=transforms.InterpolationMode.BICUBIC),
             transforms.CenterCrop(224),
             transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
         ])
-        self.slide_encoder = lambda x: x
-        # self.slide_encoder = gigapath.slide_encoder.create_model(
-        #     "hf_hub:prov-gigapath/prov-gigapath", "gigapath_slide_enc12l768d", 1536
-        # )
-        # self.tile_encoder.eval()
-        # self.slide_encoder.eval()
+        self.slide_encoder = lambda x, y: torch.zeros(1536)  # TODO remove
+        self.slide_encoder = gigapath.slide_encoder.create_model(
+            "hf_hub:prov-gigapath/prov-gigapath", "gigapath_slide_enc12l768d", 1536
+        )
+        self.tile_encoder.eval()
+        self.slide_encoder.eval()
 
     def read_wsi(self, file_path):
         """Read WSI file using OpenSlide"""
@@ -108,7 +112,10 @@ class WSIProcessor:
         # Select subset of tiles if needed
         if len(tile_coords) > self.max_tiles:
             # stupid error here
-            tile_coords = np.random.choice(tile_coords, self.max_tiles, replace=False)
+            chosen_indices = np.random.choice(
+                np.arange(len(tile_coords)), self.max_tiles, replace=False
+            )
+            tile_coords = [tile_coords[i] for i in chosen_indices]
 
         # Extract tiles in parallel
         def get_tile(coords):
@@ -129,3 +136,30 @@ class WSIProcessor:
 # Example usage
 # processor = WSIProcessor(tile_size=1024, max_tiles=16)
 # processor.process_wsi("path/to/slide.sas")
+
+# download and preprocess all slides to produce a dict of case_id to embedding
+if __name__ == '__main__':
+    cases = pd.read_csv("data/case_data.csv")
+    processor = WSIProcessor(tile_size=1024, max_tiles=16)
+    embeddings = {}
+    for case_id in tqdm(cases["case_id"], unit='cases', colour='green'):
+        diagnostic_slides = list(
+            filter(
+                lambda x: (x['data_format'] == 'SVS') and
+                (x['experimental_strategy'] == 'Diagnostic Slide'),
+                data_utils.get_case_files(case_id)
+            )
+        )
+        if len(diagnostic_slides) == 0:
+            print(f"No diagnostic slides found for {case_id}")
+            continue
+        # if multiple slides use the first
+        if not os.path.exists(f"data/wsi_embeddings/{case_id}.pt"):
+            wsi_path = data_utils.download_file(
+                diagnostic_slides[0]['file_id'], "svs", "data", diagnostic_slides[0]['file_size']
+            )
+            # process slide
+            embedding = processor.embed_wsi(wsi_path)
+            # save embedding
+            torch.save(embedding, f"data/wsi_embeddings/{case_id}.pt")
+            os.remove(wsi_path)
