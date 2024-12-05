@@ -33,7 +33,6 @@ class WSIProcessor:
             transforms.CenterCrop(224),
             transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
         ])
-        self.slide_encoder = lambda x, y: torch.zeros(1536)  # TODO remove
         self.slide_encoder = gigapath.slide_encoder.create_model(
             "hf_hub:prov-gigapath/prov-gigapath", "gigapath_slide_enc12l768d", 1536
         )
