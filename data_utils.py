@@ -169,7 +169,7 @@ def get_case_files(case_id: str | list[str]):
         response.raise_for_status()
 
 
-def download_file(file_id, file_type, dir, file_size=None):
+def download_file(file_id, file_type, dir, file_size=None) -> str:
     url = f"https://api.gdc.cancer.gov/data/{file_id}"
     path = os.path.join(os.getcwd(), dir, file_id + f'.{file_type.lower()}')
     chunksize = 16_384
@@ -188,3 +188,4 @@ def download_file(file_id, file_type, dir, file_size=None):
                 file.write(chunk)
     else:
         response.raise_for_status()
+    return path
