@@ -172,18 +172,22 @@ def get_case_files(case_id: str | list[str]):
 def download_file(file_id, file_type, dir, file_size=None) -> str:
     url = f"https://api.gdc.cancer.gov/data/{file_id}"
     path = os.path.join(os.getcwd(), dir, file_id + f'.{file_type.lower()}')
-    chunksize = 16_384
+    if os.path.exists(path):
+        print('Image already downloaded!')
+        return path
 
     # Make the request to the GDC API
     response = requests.get(url, stream=True)
 
     # Check if the request was successful
     if response.status_code == 200:
+        chunksize = 1024 * 1024  # 1 MB chunks
         total = (file_size // chunksize) + 1 if file_size is not None else None
         # Write the file content to the specified path
         with open(path, 'wb') as file:
             for chunk in tqdm(
-                response.iter_content(chunk_size=chunksize), desc='Downloading file', total=total
+                response.iter_content(chunk_size=chunksize), desc='Downloading file', total=total,
+                unit='MB'
             ):
                 file.write(chunk)
     else:
