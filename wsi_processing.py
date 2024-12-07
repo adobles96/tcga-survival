@@ -13,6 +13,8 @@ from tqdm import tqdm
 
 import data_utils
 
+device = 'cuda' if torch.cuda.is_available() else 'cpu'
+
 
 class WSIProcessor:
     def __init__(self, tile_size=1024, overlap=0, max_tiles=16):
@@ -38,6 +40,8 @@ class WSIProcessor:
         )
         self.tile_encoder.eval()
         self.slide_encoder.eval()
+        self.tile_encoder.to(device)
+        self.slide_encoder.to(device)
 
     def read_wsi(self, file_path):
         """Read WSI file using OpenSlide"""
@@ -125,11 +129,14 @@ class WSIProcessor:
 
         # Embed tiles
         tiles = torch.stack([to_tensor(t) for t in tiles], dim=0)
-        tile_embeddings = self.embed_tile(self.tile_transforms(tiles))
+        tile_embeddings = self.embed_tile(self.tile_transforms(tiles).to(device))
 
         # Embed slide
         with torch.no_grad():
-            return self.slide_encoder(tile_embeddings, torch.tensor(tile_coords)).squeeze()
+            # slide encoder expects input of shape (batch, n_tiles, d)
+            return self.slide_encoder(
+                tile_embeddings.unsqueeze(0).to(device), torch.tensor(tile_coords).to(device)
+            )[0]   # returns single element list
 
 
 # Example usage
@@ -139,26 +146,29 @@ class WSIProcessor:
 # download and preprocess all slides to produce a dict of case_id to embedding
 if __name__ == '__main__':
     cases = pd.read_csv("data/case_data.csv")
-    processor = WSIProcessor(tile_size=1024, max_tiles=16)
-    embeddings = {}
+    processor = WSIProcessor(tile_size=1024, max_tiles=32)
     for case_id in tqdm(cases["case_id"], unit='cases', colour='green'):
-        diagnostic_slides = list(
-            filter(
-                lambda x: (x['data_format'] == 'SVS') and
-                (x['experimental_strategy'] == 'Diagnostic Slide'),
-                data_utils.get_case_files(case_id)
-            )
-        )
-        if len(diagnostic_slides) == 0:
-            print(f"No diagnostic slides found for {case_id}")
-            continue
-        # if multiple slides use the first
         if not os.path.exists(f"data/wsi_embeddings/{case_id}.pt"):
-            wsi_path = data_utils.download_file(
-                diagnostic_slides[0]['file_id'], "svs", "data", diagnostic_slides[0]['file_size']
+            diagnostic_slides = list(
+                filter(
+                    lambda x: (x['data_format'] == 'SVS') and
+                    (x['experimental_strategy'] == 'Diagnostic Slide'),
+                    data_utils.get_case_files(case_id)
+                )
             )
+            if len(diagnostic_slides) == 0:
+                print(f"No diagnostic slides found for {case_id}")
+                continue
+            # if multiple slides use the first
+            try:
+                wsi_path = data_utils.download_file(
+                    diagnostic_slides[0]['file_id'], "svs", "data", diagnostic_slides[0]['file_size']
+                )
+            except Exception as e:
+                print('Download failed!')
+                continue
             # process slide
-            embedding = processor.embed_wsi(wsi_path)
+            embedding = processor.embed_wsi(wsi_path).cpu()
             # save embedding
             torch.save(embedding, f"data/wsi_embeddings/{case_id}.pt")
             os.remove(wsi_path)
