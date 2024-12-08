@@ -13,18 +13,20 @@ from tqdm import tqdm
 
 import data_utils
 
+LEVEL = 2  # level to generate tissue mask
+OCCUPANCY_THRESHOLD = 0.4
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 
 class WSIProcessor:
-    def __init__(self, tile_size=1024, overlap=0, max_tiles=16):
+    def __init__(self, tile_size=1024, overlap=0, max_tiles=None):
         """
         Initialize WSI processor
 
         Args:
             tile_size: Size of tiles to extract (default 1024x1024)
             overlap: Overlap between tiles in pixels
-            max_tiles: Maximum number of tiles to extract per WSI
+            max_tiles: Maximum number of tiles to extract per WSI, None for all
         """
         self.tile_size = tile_size
         self.overlap = overlap
@@ -65,10 +67,12 @@ class WSIProcessor:
         tissue_mask = thumb_array < thresh
         return tissue_mask
 
-    def find_tissue_tiles(self, tissue_mask, level):
+    def find_tissue_tiles(self, slide, level):
         """Find coordinates of tiles containing tissue"""
-        tile_coords = []
+        # Generate tissue mask
+        tissue_mask = self.get_tissue_mask(slide, level=level)
 
+        tile_coords = []
         scaled_tile_size = self.tile_size // 2**level
 
         for y in range(0, tissue_mask.shape[0], scaled_tile_size):
@@ -77,7 +81,7 @@ class WSIProcessor:
                 tile_mask = tissue_mask[y:y+scaled_tile_size, x:x+scaled_tile_size]
 
                 # Check if tile contains sufficient tissue
-                if tile_mask.size > 0 and np.mean(tile_mask) > 0.1:
+                if tile_mask.size > 0 and np.mean(tile_mask) > OCCUPANCY_THRESHOLD:
                     orig_x = x * 2**level
                     orig_y = y * 2**level
                     tile_coords.append((orig_x, orig_y))
@@ -106,15 +110,11 @@ class WSIProcessor:
         if slide is None:
             return
 
-        # Generate tissue mask
-        tissue_mask = self.get_tissue_mask(slide)
-
         # Find tiles containing tissue
-        tile_coords = self.find_tissue_tiles(tissue_mask, level=2)
+        tile_coords = self.find_tissue_tiles(slide, level=LEVEL)
 
         # Select subset of tiles if needed
-        if len(tile_coords) > self.max_tiles:
-            # stupid error here
+        if self.max_tiles is not None and len(tile_coords) > self.max_tiles:
             chosen_indices = np.random.choice(
                 np.arange(len(tile_coords)), self.max_tiles, replace=False
             )
@@ -146,7 +146,7 @@ class WSIProcessor:
 # download and preprocess all slides to produce a dict of case_id to embedding
 if __name__ == '__main__':
     cases = pd.read_csv("data/case_data.csv")
-    processor = WSIProcessor(tile_size=1024, max_tiles=32)
+    processor = WSIProcessor(tile_size=1024, max_tiles=2048)
     for case_id in tqdm(cases["case_id"], unit='cases', colour='green'):
         if not os.path.exists(f"data/wsi_embeddings/{case_id}.pt"):
             diagnostic_slides = list(
@@ -162,9 +162,10 @@ if __name__ == '__main__':
             # if multiple slides use the first
             try:
                 wsi_path = data_utils.download_file(
-                    diagnostic_slides[0]['file_id'], "svs", "data", diagnostic_slides[0]['file_size']
+                    diagnostic_slides[0]['file_id'], "svs", "data",
+                    diagnostic_slides[0]['file_size']
                 )
-            except Exception as e:
+            except Exception:
                 print('Download failed!')
                 continue
             # process slide
