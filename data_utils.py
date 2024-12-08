@@ -3,6 +3,8 @@ import os
 import numpy as np
 import pandas as pd
 import requests
+from sklearn.decomposition import PCA
+import torch
 from tqdm import tqdm
 
 CASES_ENDPT = "https://api.gdc.cancer.gov/cases"
@@ -187,9 +189,62 @@ def download_file(file_id, file_type, dir, file_size=None) -> str:
         with open(path, 'wb') as file:
             for chunk in tqdm(
                 response.iter_content(chunk_size=chunksize), desc='Downloading file', total=total,
-                unit='MB'
+                unit='MB', leave=False
             ):
                 file.write(chunk)
     else:
         response.raise_for_status()
     return path
+
+
+def preprocess_demo(X_demo):
+    X_demo = X_demo.copy(deep=True)
+    cat_cols = ['disease_type', 'gender', 'race', 'ajcc_pathologic_stage_coarse']
+    X_demo.loc[:, cat_cols] = X_demo[cat_cols].astype('category')
+    X_demo = pd.get_dummies(X_demo, drop_first=True)
+    X_demo.loc[X_demo.age_at_diagnosis_years.isna(), 'age_at_diagnosis_years'] = -1
+    return X_demo.astype(float)
+
+
+def preprocess_wsi(X_wsi, n_components=50):
+    # Run pca
+    pca = PCA(n_components=n_components)
+    X_wsi = pca.fit_transform(X_wsi)
+    return X_wsi
+
+
+def preprocess_omics(X_omics, n_components=50):
+    # Run pca
+    pca = PCA(n_components=n_components)
+    X_omics = pca.fit_transform(X_omics)
+    return X_omics
+
+
+def load_dataset(
+    case_file='data/case_data_filtered.csv', include_demo=False, include_wsi=False,
+    include_omics=False, wsi_n_components=10, omics_n_components=10
+):
+    cases = pd.read_csv(case_file)
+    cases = cases[cases['survival_time'] > 0]
+    y = np.array(
+        [((row['event'] == 1), row['survival_time']) for _, row in cases.iterrows()],
+        dtype=[('event', bool), ('survival_time', float)]
+    )
+    if include_demo:
+        demo_cols = ['disease_type', 'gender', 'race', 'age_at_diagnosis_years',
+                     'ajcc_pathologic_stage_coarse']
+        X_demo = cases[demo_cols]
+        X_demo = preprocess_demo(X_demo)
+    else:
+        X_demo = None
+    if include_wsi:
+        embs = torch.load('data/wsi_embs.pkl')
+        X_wsi = torch.stack([embs[case_id] for case_id in cases['case_id']], dim=0).numpy()
+        X_wsi = preprocess_wsi(X_wsi, wsi_n_components)
+    else:
+        X_wsi = None
+    if include_omics:
+        raise NotImplementedError
+    else:
+        X_omics = None
+    return X_demo, X_wsi, X_omics, y
