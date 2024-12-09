@@ -208,16 +208,26 @@ def preprocess_demo(X_demo):
 
 def preprocess_wsi(X_wsi, n_components=50):
     # Run pca
+    index = X_wsi.index
     pca = PCA(n_components=n_components)
     X_wsi = pca.fit_transform(X_wsi)
-    return X_wsi
+    return pd.DataFrame(
+        X_wsi,
+        columns=[f'wsi_pca_{i}' for i in range(1, n_components + 1)],
+        index=index
+    )
 
 
 def preprocess_omics(X_omics, n_components=50):
     # Run pca
+    index = X_omics.index
     pca = PCA(n_components=n_components)
     X_omics = pca.fit_transform(X_omics)
-    return X_omics
+    return pd.DataFrame(
+        X_omics,
+        columns=[f'omics_pca_{i}' for i in range(1, n_components + 1)],
+        index=index
+    )
 
 
 def load_dataset(
@@ -225,11 +235,7 @@ def load_dataset(
     include_omics=False, wsi_n_components=10, omics_n_components=10
 ):
     cases = pd.read_csv(case_file)
-    cases = cases[cases['survival_time'] > 0]
-    y = np.array(
-        [((row['event'] == 1), row['survival_time']) for _, row in cases.iterrows()],
-        dtype=[('event', bool), ('survival_time', float)]
-    )
+    cases = cases[cases['survival_time'] > 0].set_index('case_id')
     if include_demo:
         demo_cols = ['disease_type', 'gender', 'race', 'age_at_diagnosis_years',
                      'ajcc_pathologic_stage_coarse']
@@ -238,13 +244,79 @@ def load_dataset(
     else:
         X_demo = None
     if include_wsi:
-        embs = torch.load('data/wsi_embs.pkl')
-        X_wsi = torch.stack([embs[case_id] for case_id in cases['case_id']], dim=0).numpy()
+        embs = torch.load('data/wsi_embs1024.pkl')
+        X_wsi = pd.DataFrame(
+            {case_id: embs[case_id] for case_id in cases.index if case_id in embs}
+        ).T
         X_wsi = preprocess_wsi(X_wsi, wsi_n_components)
     else:
         X_wsi = None
     if include_omics:
-        raise NotImplementedError
+        embs = torch.load('data/gene_embs.pkl')
+        X_omics = pd.DataFrame(
+            {case_id: embs[case_id].numpy() for case_id in cases.index if case_id in embs}
+        ).T
+        X_omics = preprocess_omics(X_omics, omics_n_components)
     else:
         X_omics = None
-    return X_demo, X_wsi, X_omics, y
+    X = pd.concat([x for x in [X_demo, X_wsi, X_omics] if x is not None], join='inner', axis=1)
+    y = np.array(
+        [
+            ((cases.loc[case_id, 'event'] == 1), cases.loc[case_id, 'survival_time'])
+            for case_id in X.index
+        ],
+        dtype=[('event', bool), ('survival_time', float)]
+    )
+    return X, y
+
+
+def download_genomics(case_file):
+    cases = pd.read_csv(case_file)
+    for case in tqdm(cases['case_id'], unit='cases', colour='green'):
+        files = get_case_files(case)
+        for file in files:
+            if file['data_type'] == 'Gene Expression Quantification':
+                path = download_file(file['file_id'], file['data_format'], 'data/omics/gene_exp',
+                                     file['file_size'])
+                # rename file to case_id
+                os.rename(path, os.path.join(os.path.dirname(path), case + '.tsv'))
+                continue
+
+
+def compute_average_tpm_per_gene():
+    files = os.listdir('data/omics/gene_exp')
+    totals = None
+    count = 0
+    for file in tqdm(files, unit='files', colour='green'):
+        df = pd.read_csv(
+            os.path.join('data/omics/gene_exp', file), sep='\t', header=1, index_col='gene_name'
+        )
+        if totals is None:
+            totals = df.tpm_unstranded
+        else:
+            totals += df.tpm_unstranded
+        count += 1
+    totals /= count
+    totals.to_csv('data/average_tpm.csv', index=True)
+
+
+def get_gene_embeds(top_k=10):
+    gene_embs = torch.load('data/human_embedding.torch')
+    avg = pd.read_csv('data/average_tpm.csv', index_col='gene_name')['tpm_unstranded']
+    case_to_embed = {}
+    for file in tqdm(os.listdir('data/omics/gene_exp'), unit='cases', colour='green'):
+        case_id = file.split('.')[0]
+        tpms = pd.read_csv(
+            os.path.join('data/omics/gene_exp', file), sep='\t', header=1, index_col='gene_name'
+        )['tpm_unstranded']
+        tpms -= avg
+        top_genes = tpms.sort_values(ascending=False).index[:top_k]
+        embed = sum([gene_embs.get(gene, torch.zeros(5120)) for gene in top_genes]) / top_k
+        case_to_embed[case_id] = embed
+    torch.save(case_to_embed, 'data/gene_embs.pkl')
+
+
+if __name__ == '__main__':
+    # download_genomics('data/case_data_filtered.csv')
+    # compute_average_tpm_per_gene()
+    get_gene_embeds()
