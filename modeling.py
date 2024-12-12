@@ -1,6 +1,6 @@
 import numpy as np
 import optuna
-from sklearn.model_selection import train_test_split, cross_val_score
+from sklearn.model_selection import train_test_split, cross_val_score, StratifiedKFold
 from sksurv.ensemble import GradientBoostingSurvivalAnalysis
 from sksurv.metrics import integrated_brier_score, cumulative_dynamic_auc
 from data_utils import load_dataset
@@ -45,6 +45,12 @@ def hparam_tune(X, y, model_type, random_state=42, num_trials=20):
     params = study.best_params
     params.pop('early_stopping')  # avoids error in model instantiation
     return model_type(**params, random_state=random_state).fit(X, y)
+
+
+class CustomStratifiedKFold(StratifiedKFold):
+    """ Accounts for 2-dimensional labels in survival data. """
+    def split(self, X, y, groups=None):
+        return super().split(X, y['event'], groups)
 
 
 def get_test_scores(model, X_test, y_test, y):
