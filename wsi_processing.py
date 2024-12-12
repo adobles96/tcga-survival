@@ -177,4 +177,4 @@ if __name__ == '__main__':
             embedding = processor.embed_wsi(wsi_path).cpu()
             # save embedding
             torch.save(embedding, f"data/wsi_embeddings/{case_id}.pt")
-            os.remove(wsi_path)
+            os.remove(wsi_path)  # remove slide after processing to save space
