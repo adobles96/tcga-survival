@@ -1,0 +1,460 @@
+case_id,disease_type,primary_site,gender,race,year_of_birth,year_of_death,vital_status,days_to_death,num_diagnoses,age_at_diagnosis,days_to_diagnosis,ajcc_pathologic_stage,days_to_last_follow_up,days_to_recurrence,days_to_last_known_disease_status,survival_time,event,ajcc_pathologic_stage_coarse,age_at_diagnosis_years
+32d9935a-f5cd-43b3-88bd-09e6e2b9090d,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1949.0,,Alive,,1,23341.0,,Stage IIA,689.0,,,689.0,0,Stage II,63.0
+7c7d777b-bf00-4c24-97fc-922580d5605f,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1944.0,,Alive,,1,24738.0,,Stage IA,603.0,,,603.0,0,Stage I,67.0
+7ca711ec-9ac0-4fa7-8a60-32ae84b8789a,Acinar Cell Neoplasms,Bronchus and lung,male,white,1949.0,,Alive,,1,23201.0,,Stage IIA,1071.0,,,1071.0,0,Stage II,63.0
+349e6f38-2c67-4a69-a777-b9173a2a27cf,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1921.0,2008.0,Dead,987.0,1,31234.0,,Stage IB,,,,987.0,1,Stage I,85.0
+35cb7841-9b09-465a-90c5-e3b8a9faad49,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1925.0,2006.0,Dead,995.0,1,,,Stage IIB,,,,995.0,1,Stage II,
+7eb540b4-8dd3-4382-a488-e48b1c7213b3,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1951.0,,Dead,308.0,1,21979.0,,Stage IA,255.0,,,308.0,1,Stage I,60.0
+7fd03220-531e-4ef8-beca-e9703e8c0ae1,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1943.0,,Alive,,1,23812.0,,Stage IB,2261.0,,,2261.0,0,Stage I,65.0
+807cc7d2-6e3b-4f2d-9531-0da994eeeada,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1958.0,,Alive,,1,20011.0,,Stage IB,478.0,,,478.0,0,Stage I,54.0
+83a6ed20-b3cf-48b9-8ed3-a080cd4951fa,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1943.0,2007.0,Dead,1293.0,1,22344.0,,Stage IV,,,,1293.0,1,Stage IV,61.0
+37884d39-64e8-4242-b6bd-4c0a1daa21cd,Adenomas and Adenocarcinomas,Bronchus and lung,female,asian,1951.0,,Dead,210.0,1,21921.0,,Stage IB,3.0,,,210.0,1,Stage I,60.0
+37c8d73a-45ae-40fc-ba9a-721b755c1160,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1949.0,,Alive,,1,21518.0,,Stage IA,1870.0,,,1870.0,0,Stage I,58.0
+389f78a3-fa0b-406c-9434-aa0298341a8c,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1950.0,,Alive,,1,22927.0,,Stage IIA,553.0,,,553.0,0,Stage II,62.0
+86dac334-f30e-438e-810a-8e45f69dbb7e,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1952.0,2010.0,Dead,336.0,1,21387.0,,Stage IIA,,,,336.0,1,Stage II,58.0
+397d3f69-1453-4057-b177-8723eec923d1,Adenomas and Adenocarcinomas,Bronchus and lung,male,asian,1930.0,,Alive,,1,29627.0,,Stage IV,568.0,,,568.0,0,Stage IV,81.0
+8869000d-09d7-465a-ac32-54d1935c43e7,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1945.0,,Dead,694.0,1,24402.0,,Stage IB,479.0,,,694.0,1,Stage I,66.0
+3b21b982-dba2-45f4-ad8d-21dc86fcaaa7,Adenomas and Adenocarcinomas,Bronchus and lung,female,black or african american,1932.0,,Alive,,1,29452.0,,Stage IA,546.0,,,546.0,0,Stage I,80.0
+3b89ac82-63f6-41b9-a03d-34b9ffc1550d,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1949.0,,Dead,193.0,1,23062.0,,Stage IA,116.0,,,193.0,1,Stage I,63.0
+8ab8c4ba-311e-41d0-85ea-a0245aca1bdd,"Cystic, Mucinous and Serous Neoplasms",Bronchus and lung,female,white,1955.0,,Alive,,1,20628.0,,Stage IIA,13.0,,,13.0,0,Stage II,56.0
+3bd6badb-27ff-4d8d-b206-4d28dc264862,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1935.0,,Alive,,1,27073.0,,Stage IIIA,1130.0,,,1130.0,0,Stage III,74.0
+8d0736fe-261c-445c-bfd2-a3ea3ceaf367,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1951.0,,Alive,,1,21734.0,,Stage IB,1400.0,,,1400.0,0,Stage I,59.0
+8e2aca86-7cba-4631-9f25-4d14219dbc6d,Adenomas and Adenocarcinomas,Bronchus and lung,female,asian,1934.0,,Alive,,1,28533.0,,Stage IA,896.0,,,896.0,0,Stage I,78.0
+8f04660a-2efb-4947-9eab-375066b9eb33,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1932.0,,Alive,,1,28015.0,,Stage IB,2248.0,,,2248.0,0,Stage I,76.0
+927fc5e0-2c14-4c20-a49b-f10d8a1175c3,Adenomas and Adenocarcinomas,Bronchus and lung,female,black or african american,1949.0,,Alive,,1,23617.0,,Stage IB,476.0,,,476.0,0,Stage I,64.0
+3e34c7d9-90fa-41e2-ba6b-4bbc332adc4e,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1941.0,,Alive,,1,26044.0,,Stage IA,608.0,,,608.0,0,Stage I,71.0
+3e635902-5310-4406-8b4d-a238ce382639,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1940.0,,Alive,,1,25202.0,,,448.0,,,448.0,0,,69.0
+3ed05070-6633-4de5-9f72-090f93aa2e4d,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1950.0,,Alive,,1,22850.0,,Stage IIB,11.0,,,11.0,0,Stage II,62.0
+4036c6fc-c82e-47bb-a384-6f299dc30b52,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1958.0,,Alive,,1,19200.0,,Stage IA,719.0,,,719.0,0,Stage I,52.0
+41c4c704-825e-49f5-9d54-dbd7d30725e0,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1952.0,,Alive,,1,20219.0,,Stage IB,1559.0,,,1559.0,0,Stage I,55.0
+96dfa373-4597-49a5-942e-d9b4dc5d28fc,Adenomas and Adenocarcinomas,Bronchus and lung,female,black or african american,1949.0,2013.0,Dead,677.0,1,23370.0,,Stage II,,,,677.0,1,Stage II,64.0
+42ca54fc-c1ae-41cd-bca1-7fe9810db460,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1950.0,,Alive,,1,21766.0,,Stage IB,1429.0,,,1429.0,0,Stage I,59.0
+44d8c859-4b7a-4e9d-bffc-0de0e6afdcc4,Adenomas and Adenocarcinomas,Bronchus and lung,female,black or african american,1953.0,,Alive,,1,21771.0,,Stage IIA,426.0,,,426.0,0,Stage II,59.0
+9b93a7c5-f9b4-4461-8078-0201a725c9cf,Adenomas and Adenocarcinomas,Bronchus and lung,male,black or african american,1933.0,,Alive,,1,24942.0,,Stage IA,4992.0,,,4992.0,0,Stage I,68.0
+9c894668-88f5-4308-a1c0-6b8acc6aaaec,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1941.0,,Dead,1046.0,1,25719.0,,Stage IIA,630.0,,,1046.0,1,Stage II,70.0
+467d96d7-4a42-4116-8c32-0e4b34f96d8a,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1968.0,,Alive,,1,16409.0,,Stage IB,653.0,,,653.0,0,Stage I,44.0
+9cfc1519-33e7-4145-a4ad-78b5c449853a,"Cystic, Mucinous and Serous Neoplasms",Bronchus and lung,male,white,1944.0,,Alive,,1,24859.0,,Stage IIB,1119.0,,,1119.0,0,Stage II,68.0
+47b749e6-e060-4aa1-8f29-976e489ba789,Adenomas and Adenocarcinomas,Bronchus and lung,male,black or african american,1938.0,1999.0,Dead,260.0,1,22510.0,,Stage IIB,,,,260.0,1,Stage II,61.0
+9ee20c0d-a1c3-47f3-abda-131b3f190f52,Adenomas and Adenocarcinomas,Bronchus and lung,female,black or african american,1947.0,2009.0,Dead,2174.0,1,20961.0,,,,,,2174.0,1,,57.0
+9f4f2ff3-3c02-4281-a398-b0d0955e58eb,"Cystic, Mucinous and Serous Neoplasms",Bronchus and lung,male,white,1935.0,,Alive,,1,28413.0,,Stage IIB,813.0,,,813.0,0,Stage II,77.0
+a0e57b39-960e-4e46-8aa0-d0ee2fd9a7cc,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1943.0,2003.0,Dead,666.0,1,21891.0,,Stage IIB,,,,666.0,1,Stage II,59.0
+a214a959-3b21-4f25-a615-383cda7afdff,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1956.0,,Alive,,1,20690.0,,Stage IA,888.0,,,888.0,0,Stage I,56.0
+a250a369-e536-4a18-b7af-2911133d7bdc,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1931.0,,Alive,,1,29593.0,,Stage IA,626.0,,,626.0,0,Stage I,81.0
+4b22ad71-c585-4077-ad3c-c6e026d0c7fa,Adenomas and Adenocarcinomas,Bronchus and lung,male,black or african american,1951.0,2011.0,Dead,574.0,1,21893.0,,Stage IIA,,,,574.0,1,Stage II,59.0
+4b7cd595-e7f9-45a8-b736-a8c7c42d9539,Adenomas and Adenocarcinomas,Bronchus and lung,female,asian,1963.0,,Alive,,1,17793.0,,Stage IB,256.0,,,256.0,0,Stage I,48.0
+4b92fce2-3772-40eb-ab34-a27937b58590,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1937.0,,Dead,154.0,1,27597.0,,Stage IIB,26.0,,,154.0,1,Stage II,75.0
+a3fd20b2-e001-44ab-9716-754e5ae70808,"Cystic, Mucinous and Serous Neoplasms",Bronchus and lung,female,white,1935.0,,Alive,,1,28284.0,,Stage IIB,791.0,,,791.0,0,Stage II,77.0
+4cd3d483-2283-4c6a-a57a-444216119d34,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1941.0,,Alive,,1,24849.0,,Stage IIIA,354.0,,,354.0,0,Stage III,68.0
+a7911bdc-13f1-434a-bfa3-f8ba55d15846,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1947.0,,Dead,995.0,1,23703.0,,Stage IB,95.0,,,995.0,1,Stage I,64.0
+50b2c647-aecd-4c81-af22-0d8116593552,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1924.0,1997.0,Dead,268.0,1,26851.0,,Stage IIIA,,,,268.0,1,Stage III,73.0
+5202458b-c38a-47c0-a0ba-5f1a59a762a0,Adenomas and Adenocarcinomas,Bronchus and lung,female,black or african american,1964.0,,Alive,,1,14527.0,,Stage IA,3759.0,,,3759.0,0,Stage I,39.0
+a8de1beb-6296-44eb-bd63-c603f70faaf3,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1935.0,,Alive,,1,27924.0,,Stage IB,536.0,,,536.0,0,Stage I,76.0
+52df074f-a402-4b78-9472-f8eb268efded,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1942.0,,Alive,,1,25427.0,,Stage IA,1432.0,,,1432.0,0,Stage I,69.0
+54775a66-08cc-4f38-98f2-e7b2b5cec994,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1942.0,,Alive,,1,25315.0,,Stage IA,997.0,,,997.0,0,Stage I,69.0
+abab925c-bef3-4072-b9c4-40f808744593,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1940.0,,Alive,,1,26003.0,,Stage IA,377.0,,,377.0,0,Stage I,71.0
+54e90433-5218-4d83-848f-f995ecba2a63,Adenomas and Adenocarcinomas,Bronchus and lung,male,black or african american,1944.0,,Alive,,1,25298.0,,Stage IIA,565.0,,,565.0,0,Stage II,69.0
+adbaba9c-5efc-4130-82f6-8055eab13795,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1951.0,,Alive,,1,22540.0,,Stage IB,481.0,,,481.0,0,Stage I,61.0
+575752f8-2788-43cd-afde-f0f600f39d18,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1943.0,,Alive,,1,25384.0,,Stage IA,540.0,,,540.0,0,Stage I,69.0
+5813997a-d7dc-4f7c-8d4b-e979832168a9,Adenomas and Adenocarcinomas,Bronchus and lung,male,black or african american,1939.0,,Alive,,1,25469.0,,Stage IIB,1893.0,,,1893.0,0,Stage II,69.0
+aea68827-dc0f-484d-a00d-06deeaa4b3ce,Adenomas and Adenocarcinomas,Bronchus and lung,male,not reported,1926.0,,Alive,,1,30194.0,,Stage IB,730.0,,,730.0,0,Stage I,82.0
+595fc3ad-f603-421b-b130-52f1f617050b,Adenomas and Adenocarcinomas,Bronchus and lung,female,black or african american,1957.0,,Alive,,1,18584.0,,Stage IA,2161.0,,,2161.0,0,Stage I,50.0
+afe83af5-af22-49c0-88b4-f1d0dfcbe238,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1952.0,,Alive,,1,22260.0,,Stage IA,476.0,,,476.0,0,Stage I,60.0
+5abd6651-69be-42f8-bdc0-308e68136d31,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1932.0,,Alive,,1,22002.0,,Stage IB,7248.0,,,7248.0,0,Stage I,60.0
+b2285924-9813-4f46-bb8f-91a0efd8a9b6,Adenomas and Adenocarcinomas,Bronchus and lung,female,american indian or alaska native,1943.0,,Alive,,1,24255.0,,Stage IIB,467.0,,,467.0,0,Stage II,66.0
+5c06d97f-2aaa-43de-b085-09d7829356ba,Adenomas and Adenocarcinomas,Bronchus and lung,female,not reported,,,Alive,,1,,,Stage IA,2832.0,,,2832.0,0,Stage I,
+b2bc53d6-ef78-4ae9-a6b5-1c7cad9a43eb,Adenomas and Adenocarcinomas,Bronchus and lung,female,black or african american,1961.0,,Alive,,1,18289.0,,Stage IIA,1040.0,,,1040.0,0,Stage II,50.0
+5d2a9a4f-678d-4089-a8c5-81a5cb696629,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1949.0,,Alive,,1,22628.0,,Stage IIIA,264.0,,,264.0,0,Stage III,61.0
+b36b7567-30d3-4d0c-84c4-b203986e0fdb,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1954.0,,Alive,,1,21535.0,,Stage IB,534.0,,,534.0,0,Stage I,59.0
+5f4934be-eee3-40e1-8838-38103badc898,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1929.0,2009.0,Dead,1790.0,1,27993.0,,Stage IIIA,,,,1790.0,1,Stage III,76.0
+b61abdfd-b7a0-4e1a-b570-d1eaecad3a9e,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1929.0,1999.0,Dead,999.0,1,25132.0,,Stage IIB,,,,999.0,1,Stage II,68.0
+5fe77d4a-a8a5-4c90-8ff2-9c3bbbb309ef,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1929.0,,Alive,,1,30665.0,,Stage IA,634.0,,,634.0,0,Stage I,84.0
+b86b1616-20a2-4300-8daa-03dcc9938215,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1940.0,,Alive,,1,25730.0,,Stage IA,691.0,,,691.0,0,Stage I,70.0
+6144d666-8f77-4efe-95f1-f9e5c4e5e056,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1949.0,,Alive,,1,22745.0,,Stage IA,595.0,,,595.0,0,Stage I,62.0
+ba49117e-dab6-4e7d-bc44-f11dcafa1318,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1941.0,,Alive,,1,25929.0,,Stage IIIA,119.0,,,119.0,0,Stage III,71.0
+659668e8-f0d9-4ff2-bbc8-9246f2ef49ab,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1941.0,,Alive,,1,25870.0,,Stage IA,872.0,,,872.0,0,Stage I,70.0
+66763a0c-6cda-4832-a0cc-e7b496d78eaa,Adenomas and Adenocarcinomas,Bronchus and lung,male,not reported,1938.0,,Alive,,1,25689.0,,Stage IIB,913.0,,,913.0,0,Stage II,70.0
+bc4c4079-b449-485d-84e4-a40496e563e8,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1950.0,,Alive,,1,22571.0,,Stage IB,862.0,,,862.0,0,Stage I,61.0
+66ed89f6-8ba2-49d0-af0f-4b6ebf2381bf,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1939.0,,Dead,1026.0,1,26081.0,,Stage IA,190.0,,,1026.0,1,Stage I,71.0
+673493f6-975c-49e8-934c-001e9a0fff90,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1927.0,,Alive,,1,29989.0,,Stage IB,573.0,,,573.0,0,Stage I,82.0
+bebd0025-74e2-451b-93b3-86f82df43573,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1954.0,2012.0,Dead,896.0,1,20627.0,,Stage IIA,,,,896.0,1,Stage II,56.0
+bf755bc2-b7aa-4c3c-8b3c-58b089b5cab6,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1934.0,,Dead,343.0,1,28201.0,,Stage IIA,16.0,,,343.0,1,Stage II,77.0
+c0c879f7-c332-4d31-9f7e-a3bf361b36ee,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1960.0,,Alive,,1,19272.0,,Stage IA,601.0,,,601.0,0,Stage I,52.0
+c0e263eb-1a83-4dc8-8abe-3dd2a59bae1b,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1953.0,,Dead,19.0,1,21682.0,,Stage IIB,15.0,,,19.0,1,Stage II,59.0
+c1a01e8c-1f7e-4e24-bfad-90b73f88e992,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1947.0,,Dead,697.0,1,22385.0,,Stage IV,678.0,,,697.0,1,Stage IV,61.0
+c353f949-5f66-4a2c-b8f0-17be8bf19e0a,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1938.0,,Alive,,1,23922.0,,Stage IB,3635.0,,,3635.0,0,Stage I,65.0
+c497f8c7-2fb5-44d9-bc7c-69cfd0b51b54,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1952.0,2010.0,Dead,1725.0,1,20063.0,,Stage IB,,,,1725.0,1,Stage I,54.0
+c4c1469d-752f-42b6-8686-714ad4a8ac97,Adenomas and Adenocarcinomas,Bronchus and lung,male,not reported,,,Alive,,1,,,Stage IB,2590.0,,,2590.0,0,Stage I,
+c4cfa3cc-e305-42dd-be57-97efbb891659,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1940.0,,Alive,,1,26448.0,,Stage IIB,839.0,,,839.0,0,Stage II,72.0
+69584d55-18f7-4786-b3cc-cd528500be44,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1961.0,,Alive,,1,18903.0,,Stage IV,541.0,,,541.0,0,Stage IV,51.0
+c583fdd1-8cd2-4c15-a23e-0644261f65da,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1947.0,2011.0,Dead,1167.0,1,22525.0,,Stage IA,,,,1167.0,1,Stage I,61.0
+6bffe800-ec2b-4638-9333-97fe85dcd91c,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1964.0,,Alive,,1,17108.0,,Stage IIB,677.0,,,677.0,0,Stage II,46.0
+6c3655ca-8ae7-4ad7-b3e4-0c3ec293fba7,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1948.0,1994.0,Dead,385.0,1,16634.0,,Stage IIIA,,,,385.0,1,Stage III,45.0
+c95957a7-1a1a-4c8d-bb61-7c99b500f224,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1948.0,,Alive,,1,22852.0,,Stage IA,1617.0,,,1617.0,0,Stage I,62.0
+cbbea9f1-396a-4bf3-b67c-2cac3394dceb,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1958.0,2009.0,Dead,500.0,1,18469.0,,Stage IIB,,,,500.0,1,Stage II,50.0
+cc4bd56a-25c5-4c48-b583-ac3aeb778ca6,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1937.0,2006.0,Dead,1492.0,1,24057.0,,Stage IIB,,,,1492.0,1,Stage II,65.0
+6ee9caec-65ac-46db-9426-ffaa31967ae2,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1945.0,,Alive,,1,24773.0,,Stage IIA,84.0,,,84.0,0,Stage II,67.0
+70081320-540f-41d2-8687-ee6d011f8eb0,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1952.0,2009.0,Dead,1265.0,1,19767.0,,Stage IIIA,,,,1265.0,1,Stage III,54.0
+706420c4-8820-4b41-80d9-f3efd1d2a4f0,Adenomas and Adenocarcinomas,Bronchus and lung,male,not reported,1934.0,2008.0,Dead,2620.0,1,24516.0,,Stage IB,,,,2620.0,1,Stage I,67.0
+ccda26c1-a6d6-4317-8cf8-8a87e15ce12e,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1944.0,,Alive,,1,24014.0,,Stage IB,1280.0,,,1280.0,0,Stage I,65.0
+75589307-f141-4d0d-b35d-adbbc77b3dec,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1924.0,,Alive,,1,31818.0,,Stage IB,515.0,,,515.0,0,Stage I,87.0
+ccfdad76-cc45-447f-bed8-ede8f6a8844d,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1935.0,,Alive,,1,27946.0,,Stage IIIA,609.0,,,609.0,0,Stage III,76.0
+75dd635e-8e0c-4c0b-b21c-20f77770218d,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1942.0,,Alive,,1,24781.0,,Stage IA,1847.0,,,1847.0,0,Stage I,67.0
+cd0dc947-b708-464e-beb7-954c9d4583e7,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1940.0,2007.0,Dead,711.0,1,24253.0,,Stage IIIA,711.0,,,711.0,1,Stage III,66.0
+cd902d08-215e-4bd0-88e4-4fd01ab43cbf,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1953.0,,Alive,,1,21214.0,,Stage IB,740.0,,,740.0,0,Stage I,58.0
+765ad5a5-134b-4680-a6d4-1dd113dc47cc,Adenomas and Adenocarcinomas,Bronchus and lung,male,black or african american,1955.0,2008.0,Dead,879.0,1,18939.0,,Stage IIIA,,,,879.0,1,Stage III,51.0
+cd9e70e4-8622-4a07-8646-63f8275c1737,Adenomas and Adenocarcinomas,Bronchus and lung,female,black or african american,1948.0,2002.0,Dead,1229.0,1,18893.0,,Stage IA,,,,1229.0,1,Stage I,51.0
+77828a90-8e2a-4664-b674-d837e6e34fe4,Acinar Cell Neoplasms,Bronchus and lung,male,white,1927.0,,Alive,,1,31041.0,,Stage IB,186.0,,,186.0,0,Stage I,85.0
+ce15f31f-2bad-4485-96fa-495bfa262e66,Adenomas and Adenocarcinomas,Bronchus and lung,male,not reported,1930.0,,Alive,,1,27881.0,,Stage IB,578.0,,,578.0,0,Stage I,76.0
+d15b7b29-c5c5-41d8-b83b-7cc12fe92820,Adenomas and Adenocarcinomas,Bronchus and lung,male,not reported,1951.0,2008.0,Dead,91.0,1,20880.0,,Stage IIIB,,,,91.0,1,Stage III,57.0
+d288b69f-1e79-4429-8646-9994b7c54f8f,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1931.0,2004.0,Dead,593.0,1,26481.0,,Stage IIIA,,,,593.0,1,Stage III,72.0
+d344dae0-adf4-4697-b703-7690c13d8331,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1938.0,,Alive,,1,27040.0,,Stage IIIA,651.0,,,651.0,0,Stage III,74.0
+2c03141e-a0bd-4e8d-91e4-9744d139ccce,Acinar Cell Neoplasms,Bronchus and lung,female,white,1922.0,2009.0,Dead,4.0,1,31867.0,,Stage IIIA,,,,4.0,1,Stage III,87.0
+2de1ba51-eae1-4a54-b7cd-d6d739fdc39d,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1931.0,,Alive,,1,26285.0,,Stage IIIB,3940.0,,,3940.0,0,Stage III,72.0
+2efc156c-464a-4c2f-a854-39fefe32081c,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1929.0,,Alive,,1,28382.0,,Stage IA,2137.0,,,2137.0,0,Stage I,77.0
+2f1a4b16-104c-40eb-8114-8245847bb716,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1955.0,,Alive,,1,20918.0,,Stage IB,353.0,,,353.0,0,Stage I,57.0
+31458638-e19c-43e5-ab13-9c64b3b3681d,Adenomas and Adenocarcinomas,Bronchus and lung,female,black or african american,1945.0,,Alive,,1,24903.0,,Stage IA,513.0,,,513.0,0,Stage I,68.0
+3199cfe5-3be3-43cd-a36b-5cf2c7a9929f,Adenomas and Adenocarcinomas,Bronchus and lung,male,black or african american,1937.0,,Alive,,1,26385.0,,Stage IB,1442.0,,,1442.0,0,Stage I,72.0
+31c96e35-5e2f-429c-b12a-7bc5a497a300,Adenomas and Adenocarcinomas,Bronchus and lung,female,not reported,1959.0,,Alive,,1,17471.0,,Stage IIIB,1431.0,,,1431.0,0,Stage III,47.0
+31ff69b5-9e58-44da-8326-bdfc7ee495c4,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1967.0,,Alive,,1,16764.0,,Stage IA,568.0,,,568.0,0,Stage I,45.0
+32592562-11fa-435a-b40b-2b242bae53aa,Adenomas and Adenocarcinomas,Bronchus and lung,female,not reported,,,Dead,1115.0,1,,,Stage IIIA,,,,1115.0,1,Stage III,
+33c71ead-4c2a-476d-85ef-885dbbfc2cbd,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1955.0,,Alive,,1,20462.0,,Stage IIIA,658.0,,,658.0,0,Stage III,56.0
+7b9479ff-23d6-4689-91f0-02efc94300f9,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1934.0,,Alive,,1,28782.0,,Stage IB,466.0,,,466.0,0,Stage I,78.0
+33e3f736-7990-4f7a-ac35-863247566541,Adenomas and Adenocarcinomas,Bronchus and lung,male,not reported,1941.0,,Alive,,1,23863.0,,Stage IIB,151.0,,,151.0,0,Stage II,65.0
+7be86a90-6da8-4c01-8a7a-bc5cfef9894f,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1936.0,,Alive,,1,27445.0,,Stage IIA,791.0,,,791.0,0,Stage II,75.0
+7cce924f-12a1-4895-9866-5d4b1869dde6,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1937.0,2005.0,Dead,464.0,1,24773.0,,Stage IIIA,,,,464.0,1,Stage III,67.0
+7e7f089c-25f7-4e14-aed5-d741047b9e42,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1960.0,,Dead,444.0,1,19088.0,,Stage IIIA,26.0,,,444.0,1,Stage III,52.0
+362000e4-cf7c-48fc-93cc-8f5994b442ea,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1924.0,,Dead,440.0,1,32432.0,,Stage IA,47.0,,,440.0,1,Stage I,88.0
+7f6455e8-fa3d-4452-acb2-8c9995073072,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1960.0,,Alive,,1,18062.0,,Stage IIB,1097.0,,,1097.0,0,Stage II,49.0
+36bf02f8-c1c8-49f9-a417-adf88a205c70,Adenomas and Adenocarcinomas,Bronchus and lung,male,not reported,1937.0,,Alive,,1,26084.0,,Stage IB,791.0,,,791.0,0,Stage I,71.0
+8504fd86-a70a-4cba-9ec8-25c9e60ca549,Adenomas and Adenocarcinomas,Bronchus and lung,female,black or african american,1930.0,2010.0,Dead,370.0,1,28924.0,,Stage IIIA,,,,370.0,1,Stage III,79.0
+851867cb-9ad0-4fdf-ac75-9bb0427ad440,Adenomas and Adenocarcinomas,Bronchus and lung,female,black or african american,1939.0,,Alive,,1,27024.0,,Stage IB,486.0,,,486.0,0,Stage I,74.0
+86faf16c-56fd-4b7b-a6b2-b4c83bec93e1,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1942.0,,Dead,291.0,1,25294.0,,Stage IIB,215.0,,,291.0,1,Stage II,69.0
+875333ab-9048-462d-aaa2-693ad127e3cc,Adenomas and Adenocarcinomas,Bronchus and lung,male,black or african american,1956.0,2001.0,Dead,1357.0,1,15418.0,,Stage IV,,,,1357.0,1,Stage IV,42.0
+3a23cdb5-2327-45ac-b0b5-d4afe038c757,Adenomas and Adenocarcinomas,Bronchus and lung,female,not reported,1949.0,,Alive,,1,21884.0,,Stage IB,761.0,,,761.0,0,Stage I,59.0
+8981f0c9-7155-4c96-bf77-7d40fe404323,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1938.0,,Alive,,1,26777.0,,Stage IIB,202.0,,,202.0,0,Stage II,73.0
+8994c8c4-9ea0-46cb-b4a5-0055d7da5bfa,"Cystic, Mucinous and Serous Neoplasms",Bronchus and lung,male,white,1951.0,,Alive,,1,22138.0,,Stage IA,704.0,,,704.0,0,Stage I,60.0
+3bc7026f-73f2-418b-bd62-f4768582b790,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1950.0,,Alive,,1,22437.0,,Stage IIB,568.0,,,568.0,0,Stage II,61.0
+8f52cccd-5709-4753-9670-31a573ee27ab,"Cystic, Mucinous and Serous Neoplasms",Bronchus and lung,female,not reported,1944.0,2006.0,Dead,339.0,1,22875.0,,Stage IA,,,,339.0,1,Stage I,62.0
+8fdbd88f-19ae-4ab8-bcd7-6bfa1bbde742,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1948.0,,Alive,,1,21927.0,,Stage IB,1305.0,,,1305.0,0,Stage I,60.0
+3fe8f8e4-5396-4362-82f5-366e2fb69db2,Adenomas and Adenocarcinomas,Bronchus and lung,male,not reported,1953.0,,Alive,,1,21061.0,,Stage IIA,670.0,,,670.0,0,Stage II,57.0
+962fd4e7-9199-43d9-abce-e3dfa46da62c,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1957.0,,Alive,,1,20410.0,,Stage IB,539.0,,,539.0,0,Stage I,55.0
+42259aa6-c9f5-4309-a956-dbf930312f44,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1959.0,,Alive,,1,19106.0,,Stage IB,50.0,,,50.0,0,Stage I,52.0
+42432463-8e92-4f25-b72a-f03953527aa5,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1933.0,2011.0,Dead,1798.0,1,27223.0,,Stage IA,,,,1798.0,1,Stage I,74.0
+9759bf3a-74ff-433f-99bb-f9406f222ed2,Adenomas and Adenocarcinomas,Bronchus and lung,female,black or african american,1961.0,,Alive,,1,18542.0,,Stage IA,1118.0,,,1118.0,0,Stage I,50.0
+98ee294a-46ed-4572-bdd4-a932c3498a25,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1931.0,2008.0,Dead,950.0,1,27513.0,,Stage IA,,,,950.0,1,Stage I,75.0
+98ef41fa-3015-445a-bbdc-984361c911f7,Adenomas and Adenocarcinomas,Bronchus and lung,female,black or african american,1944.0,2003.0,Dead,1135.0,1,20605.0,,Stage IA,,,,1135.0,1,Stage I,56.0
+42d208bd-cd77-4bfb-ad53-9fc072a87393,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1957.0,,Alive,,1,18875.0,,Stage IIIB,424.0,,,424.0,0,Stage III,51.0
+99c35245-e1c8-4805-b7a5-f703bb506030,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1931.0,2008.0,Dead,74.0,1,28471.0,,Stage IIIA,,,,74.0,1,Stage III,78.0
+44adf4cb-2829-4153-80fd-a8b7ee0e654a,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1941.0,,Alive,,1,25491.0,,Stage IA,225.0,,,225.0,0,Stage I,69.0
+9b4eeecb-6aff-435b-a244-ec362af92b7f,Adenomas and Adenocarcinomas,Bronchus and lung,male,not reported,1941.0,,Alive,,1,25020.0,,Stage IIB,882.0,,,882.0,0,Stage II,68.0
+46592b7b-6968-42a6-83af-0917c9f4a9a5,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1955.0,2002.0,Dead,949.0,1,16571.0,,Stage IB,,,,949.0,1,Stage I,45.0
+9ca1a26c-82e0-48b3-b3bb-2ed57086eeb1,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1957.0,,Alive,,1,20331.0,,Stage I,626.0,,,626.0,0,Stage I,55.0
+9e640ff7-996e-427b-b56c-519a1e23baab,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1949.0,,Alive,,1,23330.0,,Stage IB,415.0,,,415.0,0,Stage I,63.0
+482eb2a7-6fed-4e4c-b1b6-14d6d869f855,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1949.0,,Alive,,1,22862.0,,Stage IIA,24.0,,,24.0,0,Stage II,62.0
+488646a1-0bdb-45f8-8c30-bef006924511,Adenomas and Adenocarcinomas,Bronchus and lung,male,not reported,,,Alive,,1,,,Stage IB,3059.0,,,3059.0,0,Stage I,
+a1e65587-24c1-4b41-92a7-4e1f15fffd78,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1938.0,2009.0,Dead,905.0,1,25502.0,,Stage IIIA,157.0,,,905.0,1,Stage III,69.0
+a244a99a-d7cc-4fb1-bc76-b66886481621,Adenomas and Adenocarcinomas,Bronchus and lung,female,not reported,1957.0,,Alive,,1,18780.0,,Stage IB,455.0,,,455.0,0,Stage I,51.0
+a391d49f-a822-460b-981c-6fbe1868ee38,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1929.0,,Alive,,1,29807.0,,Stage IIIA,1621.0,,,1621.0,0,Stage III,81.0
+4c31127e-d095-4978-9dac-35153c27f6ed,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1957.0,,Alive,,1,19074.0,,Stage IV,800.0,,,800.0,0,Stage IV,52.0
+a534b96b-1665-444a-9308-e610f2f0e510,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1939.0,,Alive,,1,26594.0,,Stage IB,592.0,,,592.0,0,Stage I,72.0
+4d153600-81f9-44fb-b485-6355ec306d6a,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1948.0,,Alive,,1,22261.0,,Stage IA,1974.0,,,1974.0,0,Stage I,60.0
+a5bd7d50-9c14-49e6-89cf-6bf440c42309,Acinar Cell Neoplasms,Bronchus and lung,female,white,1940.0,,Alive,,1,26180.0,,Stage IB,408.0,,,408.0,0,Stage I,71.0
+4ef872e1-82c9-4939-9248-41ed9d3085b2,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1948.0,2002.0,Dead,826.0,1,19080.0,,Stage IV,,,,826.0,1,Stage IV,52.0
+a65700c2-e58c-4fd4-aeb1-5686b8f4d212,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1935.0,,Alive,,1,27280.0,,Stage IIB,866.0,,,866.0,0,Stage II,74.0
+a905d275-9283-4fa6-bbbf-46019bd1bcb7,Adenomas and Adenocarcinomas,Bronchus and lung,female,not reported,1926.0,,Alive,,1,28379.0,,Stage IA,2360.0,,,2360.0,0,Stage I,77.0
+ab8d7f84-dd71-42c7-9471-4db967a9c89c,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1920.0,2004.0,Dead,22.0,1,30689.0,,Stage I,,,,22.0,1,Stage I,84.0
+ab9e6815-4d13-44db-93e5-553eb4f5bc95,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1950.0,,Alive,,1,22543.0,,Stage IB,218.0,,,218.0,0,Stage I,61.0
+548b0b68-ff45-4d45-adbe-984259e4a68b,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1962.0,,Dead,468.0,1,18170.0,,Stage IV,44.0,,,468.0,1,Stage IV,49.0
+54a9cc9e-3eee-4caa-9f33-4ea64a2999ba,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1968.0,2010.0,Dead,1043.0,1,14794.0,,Stage IV,,,,1043.0,1,Stage IV,40.0
+ae702159-5b6a-41dd-868c-7540f9e1131c,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1957.0,,Alive,,1,19981.0,,Stage IIB,1272.0,,,1272.0,0,Stage II,54.0
+591c068f-bbb1-4df2-9abb-d1a2e4a58372,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1944.0,2007.0,Dead,1499.0,1,21728.0,,Stage IIB,1499.0,,,1499.0,1,Stage II,59.0
+aee86a89-0377-4080-b16c-408bfbe78687,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1941.0,,Alive,,1,25583.0,,Stage I,411.0,,,411.0,0,Stage I,70.0
+5ace9608-d38a-42f2-a877-ec7c9d211808,Adenomas and Adenocarcinomas,Bronchus and lung,female,not reported,1944.0,2005.0,Dead,1209.0,1,21443.0,,Stage IIB,,,,1209.0,1,Stage II,58.0
+b266cbf5-80de-4473-b16f-08c502d365ca,Acinar Cell Neoplasms,Bronchus and lung,female,white,1939.0,,Alive,,1,26298.0,,Stage IA,484.0,,,484.0,0,Stage I,72.0
+5d5cc436-6e57-4d23-a164-7f5153c2e666,Adenomas and Adenocarcinomas,Bronchus and lung,male,black or african american,1948.0,,Alive,,1,21725.0,,Stage IA,1864.0,,,1864.0,0,Stage I,59.0
+b56dad1e-2fd5-47d8-9cc7-a54be9a1bae2,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1938.0,,Dead,1215.0,1,23782.0,,Stage IB,1202.0,,,1215.0,1,Stage I,65.0
+5fd0f07b-8bb9-4378-bd26-28a26057e8fe,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1947.0,,Alive,,1,23596.0,,Stage IA,904.0,,,904.0,0,Stage I,64.0
+b8475929-2d9d-4909-bd62-59684a140bd7,Adenomas and Adenocarcinomas,Bronchus and lung,female,not reported,1947.0,,Alive,,1,21430.0,,Stage IB,1126.0,,,1126.0,0,Stage I,58.0
+6092bd5c-e97c-4a77-a4ad-c87623b17507,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1940.0,,Alive,,1,24737.0,,Stage IB,1965.0,,,1965.0,0,Stage I,67.0
+b87a5d92-4c09-48fe-bb08-b3c89a7c892e,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1928.0,,Alive,,1,28908.0,,Stage IA,1700.0,,,1700.0,0,Stage I,79.0
+b89de053-d253-447f-952e-9a2edcf6bca5,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1934.0,,Dead,99.0,1,28728.0,,Stage IIA,48.0,,,99.0,1,Stage II,78.0
+b8b5ed35-b299-4c1e-9226-5ca055dc7a43,Acinar Cell Neoplasms,Bronchus and lung,female,white,1933.0,,Alive,,1,28022.0,,Stage IB,15.0,,,15.0,0,Stage I,76.0
+bab335f9-b241-41a7-b107-79b9676b37b8,"Cystic, Mucinous and Serous Neoplasms",Bronchus and lung,female,black or african american,1952.0,,Alive,,1,22159.0,,Stage IIA,617.0,,,617.0,0,Stage II,60.0
+63bd2175-4b7c-44c9-aef3-9efc8f79837b,Adenomas and Adenocarcinomas,Bronchus and lung,male,not reported,1950.0,,Dead,275.0,1,22066.0,,Stage IIIA,30.0,,,275.0,1,Stage III,60.0
+646910ee-5f5d-40ac-a21a-75790f89430a,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1953.0,,Alive,,1,21738.0,,Stage IIIA,805.0,,,805.0,0,Stage III,59.0
+bab43415-d413-40be-a4c0-2c40a52afe6a,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1958.0,,Dead,761.0,1,18856.0,,Stage IB,246.0,,,761.0,1,Stage I,51.0
+bcf2e591-9dae-440f-bd03-5f27c57db741,Adenomas and Adenocarcinomas,Bronchus and lung,male,black or african american,1955.0,,Alive,,1,20625.0,,,165.0,,,165.0,0,,56.0
+bd4e9a9f-17f3-4d33-92fc-fcc45dd0e7b4,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1920.0,1994.0,Dead,855.0,1,26583.0,,Stage IA,,,,855.0,1,Stage I,72.0
+67a2bc21-7c87-4678-997d-a434de672436,Adenomas and Adenocarcinomas,Bronchus and lung,male,not reported,1930.0,2006.0,Dead,1622.0,1,26610.0,,Stage IB,,,,1622.0,1,Stage I,72.0
+bf34664d-423d-4257-99d4-797f7d366455,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1945.0,,Dead,409.0,1,24820.0,,Stage IA,76.0,,,409.0,1,Stage I,68.0
+67dbe286-edb3-4d07-8f74-9e5254f01945,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1930.0,,Alive,,1,29858.0,,Stage IIB,603.0,,,603.0,0,Stage II,81.0
+67fa3e41-c7c6-44c5-9e67-6bcb2715aacc,Adenomas and Adenocarcinomas,Bronchus and lung,female,black or african american,1952.0,,Alive,,1,22093.0,,Stage IIB,591.0,,,591.0,0,Stage II,60.0
+681b1176-9676-44d3-892c-1d5dba1ce25b,Adenomas and Adenocarcinomas,Bronchus and lung,male,not reported,,,Alive,,1,,,Stage IB,3305.0,,,3305.0,0,Stage I,
+6845099a-b2c9-48d8-b856-9903d39bb92e,Adenomas and Adenocarcinomas,Bronchus and lung,female,black or african american,1942.0,,Alive,,1,25608.0,,Stage IB,520.0,,,520.0,0,Stage I,70.0
+68b86559-38b2-41f2-b66e-c3c2b628b14d,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1950.0,,Dead,808.0,1,22106.0,,Stage IB,722.0,,,808.0,1,Stage I,60.0
+c4d1e105-28b7-48df-abef-fbe09782fdb2,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1933.0,,Dead,1632.0,1,26625.0,,Stage IB,1475.0,,,1632.0,1,Stage I,72.0
+69b23036-add9-42c9-941f-02fb74d9b08c,Adenomas and Adenocarcinomas,Bronchus and lung,female,not reported,1938.0,,Alive,,1,25902.0,,Stage IV,669.0,,,669.0,0,Stage IV,70.0
+c6b680e3-d96e-4fc7-8053-77454b7a14fa,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1938.0,,Alive,,1,27062.0,,Stage IA,629.0,,,629.0,0,Stage I,74.0
+c6d78e27-e510-4f57-abae-19efa6105a8d,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1918.0,1997.0,Dead,1081.0,1,28387.0,,Stage IIIA,,,,1081.0,1,Stage III,77.0
+6cf49cf0-de4c-4c90-8358-eae19c6206b0,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1972.0,,Alive,,1,14064.0,,Stage IA,182.0,,,182.0,0,Stage I,38.0
+c9c533ee-e154-4a56-bce9-b5af37574b2f,Adenomas and Adenocarcinomas,Bronchus and lung,female,black or african american,1950.0,,Dead,561.0,1,22326.0,,Stage IA,62.0,,,561.0,1,Stage I,61.0
+6dfd47d2-831a-4386-9051-f78199a16bb5,Adenomas and Adenocarcinomas,Bronchus and lung,male,not reported,1941.0,2008.0,Dead,731.0,1,23833.0,,Stage IIB,,,,731.0,1,Stage II,65.0
+cc3d9750-7ce0-489f-86d4-8017b7ebed29,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1929.0,,Dead,1830.0,1,28988.0,,Stage IIA,785.0,,,1830.0,1,Stage II,79.0
+6e3b6b72-142d-4b8d-a462-28a205796e41,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1950.0,,Alive,,1,22236.0,,Stage IA,1036.0,,,1036.0,0,Stage I,60.0
+cc68632c-b1e3-491b-b562-9468e2d1c101,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1941.0,,Alive,,1,25791.0,,Stage IIA,1157.0,,,1157.0,0,Stage II,70.0
+7093024b-cf56-4783-b973-b72573ed7f2b,Acinar Cell Neoplasms,Bronchus and lung,male,white,1963.0,,Alive,,1,17951.0,,Stage IA,526.0,,,526.0,0,Stage I,49.0
+ccecce70-dd54-4c5b-bf9f-ca87d290cb00,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1953.0,,Alive,,1,20967.0,,Stage IA,141.0,,,141.0,0,Stage I,57.0
+75a0bb0b-6528-4fb8-a9e6-254905d21df4,Adenomas and Adenocarcinomas,Bronchus and lung,male,black or african american,1951.0,,Alive,,1,21939.0,,Stage IIA,827.0,,,827.0,0,Stage II,60.0
+7782ceaa-da49-4232-8b3f-534971adaad8,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1929.0,,Dead,1531.0,1,29683.0,,Stage IB,715.0,,,1531.0,1,Stage I,81.0
+ceead734-1ce0-4385-b65a-a9c853b7308e,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1953.0,,Alive,,1,20888.0,,Stage IA,1175.0,,,1175.0,0,Stage I,57.0
+77c4dbb2-eceb-4e0d-bcde-63dc817d5f35,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1947.0,,Alive,,1,23509.0,,Stage IA,567.0,,,567.0,0,Stage I,64.0
+77f8c850-b4e6-46a1-ab12-a50e0044a0c8,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1939.0,,Alive,,1,26716.0,,Stage IA,674.0,,,674.0,0,Stage I,73.0
+d2824e6d-3784-45c2-9b0f-52b17356b5da,Adenomas and Adenocarcinomas,Bronchus and lung,female,not reported,,,Alive,,1,,,Stage IB,1333.0,,,1333.0,0,Stage I,
+793649e5-f479-4d64-8723-2ef488fe0fd9,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1936.0,,Alive,,1,25998.0,,Stage IIB,2067.0,,,2067.0,0,Stage II,71.0
+d3e23815-7f9d-48aa-9aef-3a1dd9d464d7,Adenomas and Adenocarcinomas,Bronchus and lung,female,black or african american,1943.0,,Alive,,1,25778.0,,Stage IA,658.0,,,658.0,0,Stage I,70.0
+d3ff328c-2488-47bd-8663-366b6812c7b5,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1932.0,2010.0,Dead,929.0,1,28024.0,,Stage IIA,,,,929.0,1,Stage II,76.0
+d45aee46-838e-44af-8422-46710b3240a8,Adenomas and Adenocarcinomas,Bronchus and lung,female,black or african american,1948.0,,Alive,,1,23055.0,,Stage IA,1125.0,,,1125.0,0,Stage I,63.0
+d63c028b-b6d3-49ce-b63e-261eed3b86df,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1959.0,,Alive,,1,19390.0,,Stage IA,418.0,,,418.0,0,Stage I,53.0
+d6e274a0-6425-437b-bc07-1225be7808d5,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1952.0,,Alive,,1,19270.0,,Stage IB,1239.0,,,1239.0,0,Stage I,52.0
+d717fa33-3c91-4ced-89c6-79ff5542f04c,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1939.0,2006.0,Dead,1147.0,1,23510.0,,Stage IIA,,,,1147.0,1,Stage II,64.0
+d721bfe0-90e3-415e-b9f3-1a270efa5fbb,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1918.0,1994.0,Dead,869.0,1,27332.0,,Stage IA,,,,869.0,1,Stage I,74.0
+d7ae8efb-aa4d-4807-9772-55b0a28ccd5c,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1941.0,2009.0,Dead,1454.0,1,24050.0,,Stage IB,,,,1454.0,1,Stage I,65.0
+d8faa3a7-6b3f-4e69-8c88-184e41055bd7,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1957.0,,Alive,,1,19977.0,,Stage IIA,701.0,,,701.0,0,Stage II,54.0
+da345947-498b-4272-a231-a987ed4fe151,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1939.0,,Alive,,1,26800.0,,Stage IA,351.0,,,351.0,0,Stage I,73.0
+daf0e08e-1738-43f8-874a-b37d79cbe3a7,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1932.0,2001.0,Dead,244.0,1,25558.0,,Stage IIIA,,,,244.0,1,Stage III,70.0
+db769d5c-a794-448d-9130-38a82d051c95,"Cystic, Mucinous and Serous Neoplasms",Bronchus and lung,female,white,1947.0,,Alive,,1,23505.0,,Stage IB,704.0,,,704.0,0,Stage I,64.0
+dbd5b0de-94c9-45dd-afb3-6820a7ecaca2,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1958.0,,Alive,,1,19310.0,,Stage IB,174.0,,,174.0,0,Stage I,52.0
+dc9eaaa0-0bfd-46d0-994f-310826879da4,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1969.0,,Alive,,1,15355.0,,Stage IB,230.0,,,230.0,0,Stage I,42.0
+dcd066ba-5894-453e-b1da-82092858c3db,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1959.0,,Dead,376.0,1,19301.0,,Stage IIA,0.0,,,376.0,1,Stage II,52.0
+dd46c83e-6551-485b-b935-f3beed891244,Adenomas and Adenocarcinomas,Bronchus and lung,male,not reported,1935.0,,Alive,,1,28119.0,,Stage IB,773.0,,,773.0,0,Stage I,77.0
+dd63d0fd-e24b-40a5-88c5-7d3d4106631e,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1952.0,,Alive,,1,22206.0,,Stage IB,652.0,,,652.0,0,Stage I,60.0
+ddeacccf-0953-4952-8a4e-c2617f2e7bcc,Adenomas and Adenocarcinomas,Bronchus and lung,female,black or african american,1949.0,,Alive,,1,22471.0,,Stage IA,852.0,,,852.0,0,Stage I,61.0
+e00a60d7-4253-443d-a187-680ad0931349,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1934.0,2011.0,Dead,1653.0,1,26825.0,,Stage IB,,,,1653.0,1,Stage I,73.0
+e01e4fb3-236a-4d16-9073-555876b688e9,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1956.0,,Dead,737.0,1,20491.0,,Stage IIB,536.0,,,737.0,1,Stage II,56.0
+e0a19099-5d25-40df-ad73-6260df3a1b32,Adenomas and Adenocarcinomas,Bronchus and lung,female,not reported,1941.0,,Alive,,1,25383.0,,Stage IB,62.0,,,62.0,0,Stage I,69.0
+e10568fe-0436-43f2-9f0f-48f9903868c4,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1959.0,2008.0,Dead,336.0,1,18152.0,,Stage IIIA,,,,336.0,1,Stage III,49.0
+e16ca88f-488b-40f0-9169-e5a62482a2ff,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1966.0,2009.0,Dead,97.0,1,15970.0,,Stage IB,97.0,,,97.0,1,Stage I,43.0
+e21e2af3-dc71-41fa-94ba-7a7929f47d90,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1946.0,,Alive,,1,24224.0,,Stage IA,988.0,,,988.0,0,Stage I,66.0
+e254aaeb-012c-4d92-8a03-cce1f6a2bcd6,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1952.0,,Alive,,1,21655.0,,Stage IB,462.0,,,462.0,0,Stage I,59.0
+e2b0d873-4942-4483-9a88-d5c6338d0382,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1931.0,,Alive,,1,29915.0,,Stage IB,614.0,,,614.0,0,Stage I,81.0
+e43a2b72-35c6-4466-9007-ce96caf77ea8,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1958.0,,Alive,,1,20027.0,,Stage IB,28.0,,,28.0,0,Stage I,54.0
+e499069b-a16a-49e9-941a-e3e9ea62af25,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1941.0,,Alive,,1,25893.0,,Stage IIB,910.0,,,910.0,0,Stage II,70.0
+e5cb0c86-8fe2-4cfc-b32b-e8ec3839ffc4,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1946.0,,Alive,,1,21381.0,,Stage IB,1233.0,,,1233.0,0,Stage I,58.0
+e5f956dd-f49f-435c-83c3-5b1b0a2050ed,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1935.0,,Alive,,1,28163.0,,Stage IA,1079.0,,,1079.0,0,Stage I,77.0
+e60a8f8a-0fe6-40e5-9f30-bcff48ac73f4,Acinar Cell Neoplasms,Bronchus and lung,male,white,1925.0,2012.0,Dead,1194.0,1,30689.0,,Stage IB,,,,1194.0,1,Stage I,84.0
+e64f76e4-f748-4d9e-ba71-53e2818a7920,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1937.0,1993.0,Dead,321.0,1,20763.0,,Stage IB,,,,321.0,1,Stage I,56.0
+e68219b0-a9c2-49df-8f0d-db5ea97fd2dc,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1950.0,,Alive,,1,,,Stage IA,435.0,,,435.0,0,Stage I,
+e6e75590-9520-4b1c-8a28-4a1d2b2218fc,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1935.0,2011.0,Dead,18.0,1,27980.0,,Stage IA,,,,18.0,1,Stage I,76.0
+e737f650-b72d-44e7-b750-558a56716803,Adenomas and Adenocarcinomas,Bronchus and lung,male,not reported,1942.0,,Alive,,1,24350.0,,Stage IIB,761.0,,,761.0,0,Stage II,66.0
+e739b4f7-ae46-45c6-9013-9571cbadaf99,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1936.0,,Alive,,1,27456.0,,Stage IA,531.0,,,531.0,0,Stage I,75.0
+e7d30bc2-42e8-49c5-a5b3-9f58411b007a,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1934.0,2002.0,Dead,586.0,1,24809.0,,Stage IIB,,,,586.0,1,Stage II,67.0
+e8060c45-451d-4779-9584-f284db47e63e,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1930.0,2002.0,Dead,626.0,1,25990.0,,Stage IIB,,,,626.0,1,Stage II,71.0
+e8b7a103-644f-4865-92f8-80b053bd5e17,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1950.0,,Alive,,1,21076.0,,Stage IB,14.0,,,14.0,0,Stage I,57.0
+ea0b9461-0d4d-4ade-a255-1b03dd85e30e,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1953.0,,Alive,,1,21565.0,,Stage IIA,44.0,,,44.0,0,Stage II,59.0
+ef03654a-dcf1-41ff-a67e-4f3fbf9ba807,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1935.0,,Alive,,1,27949.0,,Stage IA,683.0,,,683.0,0,Stage I,76.0
+f063ddbb-1668-40df-9ec2-b0a23ca2c389,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1935.0,2008.0,Dead,760.0,1,,,Stage IIB,,,,760.0,1,Stage II,
+f0c94f68-bfd9-45cb-b4fd-8bb1ae4e9a2b,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1927.0,,Alive,,1,31134.0,,,409.0,,,409.0,0,,85.0
+f17d3463-af6c-42c2-a8e9-fae45f69286f,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1939.0,,Dead,171.0,1,,,Stage IIA,24.0,,,171.0,1,Stage II,
+f1f80dd2-891d-46dd-a3e0-f007628cb515,Adenomas and Adenocarcinomas,Bronchus and lung,female,black or african american,1961.0,,Dead,300.0,1,19035.0,,Stage IA,254.0,,,300.0,1,Stage I,52.0
+f2d8b332-2f03-46e5-a9d5-f163972e5fa7,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1951.0,,Alive,,1,22383.0,,Stage IA,423.0,,,423.0,0,Stage I,61.0
+f327dea0-2d30-482f-809c-76a148a749b7,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1938.0,2011.0,Dead,429.0,1,26565.0,,Stage IIA,,,,429.0,1,Stage II,72.0
+f40301ba-831e-4afd-9ce8-5f3c1a05ff7e,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1935.0,,Alive,,1,27298.0,,Stage IB,1351.0,,,1351.0,0,Stage I,74.0
+f4350d9c-3f40-4829-bbc4-8acb2f3ff512,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1956.0,,Alive,,1,20206.0,,Stage IB,551.0,,,551.0,0,Stage I,55.0
+f462cfef-f60a-4d3e-b92d-b8d8f50b6bb3,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1952.0,,Alive,,1,21785.0,,Stage IIB,134.0,,,134.0,0,Stage II,59.0
+f59e5a76-f803-470b-910c-a897a149d939,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1950.0,,Alive,,1,22676.0,,Stage IIIA,440.0,,,440.0,0,Stage III,62.0
+f77b6930-a1ce-446e-a15d-c018cbbecfee,Adenomas and Adenocarcinomas,Bronchus and lung,female,black or african american,1950.0,2003.0,Dead,896.0,1,18762.0,,Stage IIB,,,,896.0,1,Stage II,51.0
+f77cf4d3-9829-4fd3-95a1-b29aed9e94b8,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1936.0,,Alive,,1,25931.0,,,1189.0,,,1189.0,0,,71.0
+f7f9f522-de88-4f9c-8ba4-7be3726faaf8,Adenomas and Adenocarcinomas,Bronchus and lung,female,not reported,1946.0,2003.0,Dead,582.0,1,20581.0,,Stage IIB,,,,582.0,1,Stage II,56.0
+f809e21d-5f2e-4f3b-a1aa-d6b8d463552a,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1929.0,,Alive,,1,28495.0,,Stage IB,2199.0,,,2199.0,0,Stage I,78.0
+f809e7d9-a75e-41c9-ac2c-5bec6ffcb4a2,Acinar Cell Neoplasms,Bronchus and lung,male,black or african american,1945.0,,Alive,,1,23479.0,,Stage IB,2224.0,,,2224.0,0,Stage I,64.0
+f934ed41-090e-4313-bbc5-d1a4a9ed9ad7,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1939.0,,Alive,,1,26991.0,,Stage IA,415.0,,,415.0,0,Stage I,73.0
+f98ecd8a-b878-4f53-b911-20cd8e17281c,Adenomas and Adenocarcinomas,Bronchus and lung,female,not reported,1928.0,2007.0,Dead,121.0,1,29068.0,,Stage IIIA,,,,121.0,1,Stage III,79.0
+fa0c7392-d485-41ac-bf7e-244a528209ae,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1930.0,2003.0,Dead,624.0,1,26567.0,,Stage IIIB,,,,624.0,1,Stage III,72.0
+fb6b289c-aaf9-4d8e-b6e0-5d35bce1b6e1,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1947.0,,Alive,,1,21428.0,,Stage IA,1728.0,,,1728.0,0,Stage I,58.0
+fb79c491-7b01-42ae-8369-8364e442e31b,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1954.0,,Alive,,1,20349.0,,Stage IIB,1301.0,,,1301.0,0,Stage II,55.0
+fc79086c-af9a-4c27-b074-f7050b6f3381,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1937.0,2008.0,Dead,1171.0,1,24863.0,,Stage IB,,,,1171.0,1,Stage I,68.0
+fcfe0b53-dfc1-42fa-9efc-2b2ff259297e,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1946.0,,Alive,,1,23919.0,,Stage IB,564.0,,,564.0,0,Stage I,65.0
+fd3fc273-c035-40ea-a459-ff4806f5d592,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1944.0,,Alive,,1,22059.0,,Stage IB,2676.0,,,2676.0,0,Stage I,60.0
+fd5c44ef-ea50-4fba-9e8d-e371cf34ebdb,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1947.0,2002.0,Dead,807.0,1,19480.0,,Stage IIIA,,,,807.0,1,Stage III,53.0
+fe3eeeb6-0db4-46d7-a020-55604d474c12,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1925.0,2009.0,Dead,2681.0,1,28295.0,,Stage IV,,,,2681.0,1,Stage IV,77.0
+ff07ea4b-4e50-410d-99d6-96a351dad7b1,Adenomas and Adenocarcinomas,Bronchus and lung,male,black or african american,1951.0,,Alive,,1,22218.0,,Stage IA,824.0,,,824.0,0,Stage I,60.0
+ff9def3d-17e5-4ef6-b74e-933f11ed6f00,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1928.0,1999.0,Dead,173.0,1,26272.0,,Stage IIIA,,,,173.0,1,Stage III,71.0
+ffb0c0b7-165e-4439-b3e6-62431f40b7fe,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1932.0,,Alive,,1,28392.0,,Stage IA,1163.0,,,1163.0,0,Stage I,77.0
+07b5663f-9a54-4462-b6c1-6fc8116b8714,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1944.0,,Alive,,1,23854.0,,Stage IA,1324.0,,,1324.0,0,Stage I,65.0
+294ff941-aea1-4588-9a0e-e9f5393e2bb6,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1942.0,,Alive,,1,23762.0,,Stage IA,2515.0,,,2515.0,0,Stage I,65.0
+ebb33753-9d38-4368-9033-3e55f129d00d,Adenomas and Adenocarcinomas,Bronchus and lung,male,black or african american,1946.0,,Alive,,1,23538.0,,Stage IB,889.0,,,889.0,0,Stage I,64.0
+781f40c9-c099-4c96-8269-ebe2a449c93d,Adenomas and Adenocarcinomas,Bronchus and lung,male,not reported,1936.0,2005.0,Dead,321.0,1,25422.0,,Stage IIB,,,,321.0,1,Stage II,69.0
+5134c56f-8286-4ec8-8348-237cee7dad5e,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1929.0,2010.0,Dead,176.0,1,,,Stage IIA,,,,176.0,1,Stage II,
+369f14c4-2191-4962-a309-3e23ddc4e5fc,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1946.0,,Alive,,1,23892.0,,Stage IIA,739.0,,,739.0,0,Stage II,65.0
+e51f717f-72e8-400e-9f35-fc5dc32fdf71,Adenomas and Adenocarcinomas,Bronchus and lung,male,not reported,,,Alive,,1,,,Stage IB,2595.0,,,2595.0,0,Stage I,
+bbe88801-34f3-46d2-bbfd-b46c3901ed71,Adenomas and Adenocarcinomas,Bronchus and lung,male,asian,1934.0,,Alive,,1,28453.0,,Stage IB,186.0,,,186.0,0,Stage I,77.0
+d2c1e896-6886-4122-bb48-5fbcd3f641f4,Adenomas and Adenocarcinomas,Bronchus and lung,male,not reported,1939.0,2008.0,Dead,274.0,1,25417.0,,Stage IIIA,,,,274.0,1,Stage III,69.0
+108a71cf-b9db-47cd-aa74-c03ec989b41b,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1937.0,,Alive,,1,26920.0,,Stage IIA,422.0,,,422.0,0,Stage II,73.0
+9c7875ad-ab71-4d48-b2e3-e4c7a46393e9,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1929.0,,Alive,,1,30133.0,,Stage IIIA,522.0,,,522.0,0,Stage III,82.0
+d12b6930-9ae4-4fe7-ad69-d183135c91ab,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1937.0,,Alive,,1,27385.0,,Stage IB,600.0,,,600.0,0,Stage I,75.0
+8214a0d1-5e2d-4a7a-acb1-e5580755db83,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1934.0,2008.0,Dead,800.0,1,26440.0,,Stage IA,,,,800.0,1,Stage I,72.0
+69dba721-a168-47a4-b7ff-80a448bad654,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1940.0,,Dead,187.0,1,26105.0,,Stage IIA,3.0,,,187.0,1,Stage II,71.0
+d31aeefc-b59b-42e9-9919-750b17a70a3d,Adenomas and Adenocarcinomas,Bronchus and lung,female,asian,1930.0,,Alive,,1,,,Stage IA,1479.0,,,1479.0,0,Stage I,
+afb91740-2668-46d7-ba01-bb26153ad1c7,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1924.0,2008.0,Dead,1600.0,1,29508.0,,Stage IB,1600.0,,,1600.0,1,Stage I,80.0
+f1985735-a188-4567-a88a-530f9b80291b,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1925.0,2002.0,Dead,1073.0,1,27667.0,,Stage IB,,,,1073.0,1,Stage I,75.0
+a41c46da-7ed4-4192-bd16-b3cbb94a5133,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1940.0,2006.0,Dead,701.0,1,,,Stage IA,,,,701.0,1,Stage I,
+6d72de06-232a-4983-a06c-eba6d82cb3f1,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1937.0,,Alive,,1,25008.0,,Stage IIIA,1178.0,,,1178.0,0,Stage III,68.0
+c650b1ff-8a4c-4ee9-b7c1-268c28c83827,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1948.0,,Dead,503.0,1,23165.0,,Stage IA,37.0,,,503.0,1,Stage I,63.0
+8609edfc-119d-4d63-9188-c86aabd5ca52,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1969.0,,Alive,,1,15605.0,,Stage IA,993.0,,,993.0,0,Stage I,42.0
+f3501466-cf32-4866-b5fb-e94dd32341bc,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1940.0,,Alive,,1,25313.0,,Stage IA,1159.0,,,1159.0,0,Stage I,69.0
+772324a5-5513-454d-ad6b-605798f69b73,"Cystic, Mucinous and Serous Neoplasms",Bronchus and lung,female,white,1940.0,,Alive,,1,26616.0,,Stage IIB,416.0,,,416.0,0,Stage II,72.0
+b40d0849-f4ef-4a14-9732-9beb708cb46b,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1918.0,2002.0,Dead,258.0,1,30869.0,,Stage IIB,,,,258.0,1,Stage II,84.0
+2483621a-4db3-41ab-aa33-b9427ea8a0af,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1925.0,1997.0,Dead,354.0,1,26538.0,,Stage IB,,,,354.0,1,Stage I,72.0
+1b354837-4925-4480-ac32-6b44d0957314,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1941.0,,Alive,,1,25526.0,,Stage IV,131.0,,,131.0,0,Stage IV,69.0
+21fb46f9-4bbb-441c-af19-a687e9138344,"Cystic, Mucinous and Serous Neoplasms",Bronchus and lung,male,white,1940.0,,Dead,488.0,1,25839.0,,Stage IIA,445.0,,,488.0,1,Stage II,70.0
+923b37e4-fcf7-46a0-8cb2-9139711fec7b,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1939.0,,Alive,,1,26451.0,,Stage IA,652.0,,,652.0,0,Stage I,72.0
+199386c2-bb53-4fad-a1b6-59ab216a4a50,Adenomas and Adenocarcinomas,Bronchus and lung,male,asian,1949.0,,Alive,,1,20381.0,,Stage IIB,2065.0,,,2065.0,0,Stage II,55.0
+889aec8e-14ba-48d9-8fe1-f2416e82b333,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1943.0,,Alive,,1,24631.0,,Stage IA,845.0,,,845.0,0,Stage I,67.0
+0d66bf6c-eed0-4726-bd5b-3bf6d610b4e0,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1928.0,,Dead,1268.0,1,29195.0,,Stage IB,1015.0,,,1268.0,1,Stage I,79.0
+cbfef004-b437-4d51-9d88-a2db50aa6481,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1942.0,,Dead,557.0,1,25483.0,,Stage IB,366.0,,,557.0,1,Stage I,69.0
+9a50e7e4-831d-489f-87d2-979e987561cc,Adenomas and Adenocarcinomas,Bronchus and lung,male,not reported,1943.0,,Alive,,1,24411.0,,Stage IIIA,426.0,,,426.0,0,Stage III,66.0
+bf15f7ad-9d92-473b-91d1-f24aa373ab97,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1944.0,,Alive,,1,23808.0,,Stage IIB,1367.0,,,1367.0,0,Stage II,65.0
+1f1df7ea-00b9-4432-86de-da773d1451e5,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1939.0,,Alive,,1,26986.0,,Stage IB,552.0,,,552.0,0,Stage I,73.0
+c2a1de2e-6451-4c95-8ce6-263f2b7e6eff,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1945.0,,Alive,,1,22150.0,,Stage IA,2616.0,,,2616.0,0,Stage I,60.0
+9f81c602-8afa-4588-b0b6-6e5a1a128d5a,Adenomas and Adenocarcinomas,Bronchus and lung,male,not reported,1930.0,2006.0,Dead,303.0,1,28094.0,,Stage IIIB,,,,303.0,1,Stage III,76.0
+a52e99d6-a61a-439d-b0b1-ca7a0eabcb04,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1969.0,,Alive,,1,15363.0,,Stage IB,476.0,,,476.0,0,Stage I,42.0
+193201a3-1447-47b1-bdf1-11ae0eb3b2f3,Adenomas and Adenocarcinomas,Bronchus and lung,male,black or african american,1940.0,2011.0,Dead,87.0,1,26000.0,,Stage IIA,,,,87.0,1,Stage II,71.0
+4d51ee44-e6f4-4bcb-be28-e9df54b39a8d,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1931.0,,Dead,598.0,1,29235.0,,Stage IA,6.0,,,598.0,1,Stage I,80.0
+ad74c0e8-8878-4efc-997d-981cd547bc5b,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1952.0,,Alive,,1,21527.0,,Stage IA,1189.0,,,1189.0,0,Stage I,58.0
+9fcdccae-676e-4071-93c3-23d2d3ab0c00,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1943.0,,Alive,,1,24848.0,,Stage IA,442.0,,,442.0,0,Stage I,68.0
+8b119d1c-6d21-4bbd-8a00-12da7b97d6c4,Adenomas and Adenocarcinomas,Bronchus and lung,male,not reported,1941.0,,Alive,,1,24472.0,,Stage IIIA,457.0,,,457.0,0,Stage III,67.0
+127bf818-f7e5-46b5-a9de-39f6d96b8b83,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1935.0,2005.0,Dead,864.0,1,25104.0,,Stage IIB,,,,864.0,1,Stage II,68.0
+eeab558b-8d1e-4843-861d-dbfb06061758,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1939.0,,Alive,,1,25658.0,,Stage IA,610.0,,,610.0,0,Stage I,70.0
+195a5afb-b79f-44d2-9d12-884487630c2b,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1965.0,,Dead,281.0,1,16746.0,,Stage IIA,164.0,,,281.0,1,Stage II,45.0
+e0acafdd-06d0-48a6-bd68-577ef666a419,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1944.0,,Alive,,1,24752.0,,Stage IA,477.0,,,477.0,0,Stage I,67.0
+0c0b610e-fe4c-406d-a5ed-5cc3b11dabf5,"Cystic, Mucinous and Serous Neoplasms",Bronchus and lung,male,white,1946.0,,Alive,,1,23378.0,,Stage IIB,728.0,,,728.0,0,Stage II,64.0
+294cb595-0907-44c7-bbef-985a27c1e6e2,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1935.0,,Alive,,1,27891.0,,Stage IB,705.0,,,705.0,0,Stage I,76.0
+5af499be-d2b9-4eaf-9a9f-435dccb51917,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1947.0,2006.0,Dead,237.0,1,21780.0,,Stage IIB,,,,237.0,1,Stage II,59.0
+3434b91a-c05f-460f-a078-7b1bb6e7085d,Adenomas and Adenocarcinomas,Bronchus and lung,male,not reported,1941.0,,Alive,,1,24868.0,,Stage IB,607.0,,,607.0,0,Stage I,68.0
+12b79b4f-c28c-418e-a1e7-e622f33fdcc2,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1923.0,2009.0,Dead,460.0,1,31236.0,,Stage IB,,,,460.0,1,Stage I,85.0
+44218b35-219c-4ad9-a01e-fde14067c4c0,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1942.0,,Dead,1528.0,1,24713.0,,Stage IB,994.0,,,1528.0,1,Stage I,67.0
+8e41153b-9faf-45c3-8397-8a428ef5c0d5,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1939.0,,Alive,,1,26302.0,,Stage IA,487.0,,,487.0,0,Stage I,72.0
+f587c9ab-2949-4410-80d6-a050865d48aa,Adenomas and Adenocarcinomas,Bronchus and lung,female,not reported,1932.0,,Alive,,1,27241.0,,Stage IB,610.0,,,610.0,0,Stage I,74.0
+8a16ddb3-4861-4128-bed9-0b1f94fe8cf7,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1928.0,2006.0,Dead,628.0,1,28482.0,,Stage IIIA,,,,628.0,1,Stage III,78.0
+edf80622-aea2-4b50-bb69-691d6708aa83,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1940.0,,Alive,,1,25593.0,,Stage IIIA,448.0,,,448.0,0,Stage III,70.0
+d94fe32f-bedd-4f4c-9feb-fcb60d40f4bb,Adenomas and Adenocarcinomas,Bronchus and lung,female,not reported,1941.0,2009.0,Dead,457.0,1,24472.0,,Stage IV,,,,457.0,1,Stage IV,67.0
+9b38eded-3f46-4aaa-9991-68008d97bdbe,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1963.0,,Alive,,1,17392.0,,Stage IIA,882.0,,,882.0,0,Stage II,47.0
+0780eb43-d5b5-4c3d-9825-beacba5cc723,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1929.0,1999.0,Dead,1421.0,1,24817.0,,Stage IB,,,,1421.0,1,Stage I,67.0
+2b68b51f-bd4c-4bbb-b4e6-2eead53da2a4,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1942.0,,Alive,,1,25441.0,,Stage IIB,724.0,,,724.0,0,Stage II,69.0
+230dc42d-681c-4e31-9d2e-c724e61829fb,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1939.0,,Alive,,1,27003.0,,Stage IIB,285.0,,,285.0,0,Stage II,73.0
+b256e065-c681-4f82-8b68-a8ef7c413791,Acinar Cell Neoplasms,Bronchus and lung,male,white,1938.0,,Alive,,1,26897.0,,Stage IB,977.0,,,977.0,0,Stage I,73.0
+722d6818-f1cb-49f4-b68a-fd0a31304681,Adenomas and Adenocarcinomas,Bronchus and lung,female,not reported,1950.0,2007.0,Dead,244.0,1,20819.0,,Stage IV,,,,244.0,1,Stage IV,57.0
+78a24c56-576c-4245-bb42-6603b3d19897,Adenomas and Adenocarcinomas,Bronchus and lung,female,not reported,1943.0,,Alive,,1,23893.0,,Stage IIB,791.0,,,791.0,0,Stage II,65.0
+7099597a-b208-45b5-b9e0-11ab40d5e497,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1976.0,,Alive,,1,12179.0,,Stage IB,1183.0,,,1183.0,0,Stage I,33.0
+c8544fb3-b26e-4672-bb81-a271db724b04,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1934.0,2005.0,Dead,62.0,1,26058.0,,Stage IIIA,,,,62.0,1,Stage III,71.0
+9a9bd705-1ef1-4a6c-bb1e-bdd346dc01c0,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1942.0,,Alive,,1,25477.0,,Stage IA,547.0,,,547.0,0,Stage I,69.0
+8d535aa6-6d59-4965-b5ed-17217d8f5930,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1937.0,,Alive,,1,27485.0,,Stage IA,515.0,,,515.0,0,Stage I,75.0
+0075437e-ba1a-46be-86d6-9773209a2b5e,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1946.0,,Alive,,1,23689.0,,Stage IIB,1246.0,,,1246.0,0,Stage II,64.0
+009be09b-f9f6-43b7-8f45-4a648f8123ce,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1925.0,,Alive,,1,30706.0,,Stage IB,427.0,,,427.0,0,Stage I,84.0
+01e9888d-b5b9-48f1-8ba6-8a89af108a04,Adenomas and Adenocarcinomas,Bronchus and lung,male,black or african american,1964.0,,Alive,,1,18127.0,,Stage IIIA,617.0,,,617.0,0,Stage III,49.0
+028e99e9-5b9a-4954-bb6e-6d4709a3cea8,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1930.0,,Alive,,1,,,Stage IB,3261.0,,,3261.0,0,Stage I,
+035c0b2b-c722-443b-8962-db4ee92c7532,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1938.0,,Alive,,1,26808.0,,Stage IIA,179.0,,,179.0,0,Stage II,73.0
+03c3409a-9d16-41d0-9e26-f9fc2547a4c8,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1936.0,2010.0,Dead,38.0,1,27381.0,,,,,,38.0,1,,75.0
+05534064-8b43-4c82-95da-70fd83bd6560,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1933.0,,Dead,1197.0,1,24440.0,,Stage IB,881.0,,,1197.0,1,Stage I,66.0
+055e9a43-3c00-4110-a303-e4407676bec0,Adenomas and Adenocarcinomas,Bronchus and lung,male,black or african american,1957.0,,Alive,,1,19917.0,,Stage IB,670.0,,,670.0,0,Stage I,54.0
+06fe7f3e-4edd-4150-981c-93787ea19b39,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1945.0,,Alive,,1,24786.0,,Stage IIIA,446.0,,,446.0,0,Stage III,67.0
+079ae0b3-b64b-4b8e-ab7d-225b8046568c,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1943.0,,Alive,,1,25062.0,,Stage IB,605.0,,,605.0,0,Stage I,68.0
+088edf89-d2b5-40c7-b066-df3bd383f7ea,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1935.0,1997.0,Dead,428.0,1,22628.0,,Stage IIB,,,,428.0,1,Stage II,61.0
+09078761-1c14-4d01-8e15-535c19a9b0f9,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1953.0,,Alive,,1,21648.0,,Stage IB,499.0,,,499.0,0,Stage I,59.0
+096bd95f-9900-4db2-b1c4-103902c3b31f,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1951.0,,Dead,550.0,1,22414.0,,Stage IA,287.0,,,550.0,1,Stage I,61.0
+0a1eea76-e19a-4547-9b24-abf7051cc4db,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1962.0,,Alive,,1,18479.0,,Stage IIA,806.0,,,806.0,0,Stage II,50.0
+0a45f302-5748-48f3-9dc9-66c01843a68e,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1952.0,2008.0,Dead,1379.0,1,19497.0,,Stage IIIA,,,,1379.0,1,Stage III,53.0
+0b15fcb8-1fb7-497e-80b9-d3db66a3c0a2,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1937.0,,Dead,243.0,1,27087.0,,Stage IIB,121.0,,,243.0,1,Stage II,74.0
+0c59ff96-5e4a-4664-a0b1-d057b4725483,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1941.0,2007.0,Dead,594.0,1,23993.0,,Stage IB,,,,594.0,1,Stage I,65.0
+0d0d83d9-d558-4d38-977b-6f1b2471beda,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1949.0,,Alive,,1,22772.0,,Stage IB,1072.0,,,1072.0,0,Stage I,62.0
+0d980584-4484-4063-8243-c3cd67f6f588,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1934.0,,Alive,,1,28544.0,,Stage IIA,603.0,,,603.0,0,Stage II,78.0
+0df573ee-28f0-4244-b434-09e6ca59fbf0,Adenomas and Adenocarcinomas,Bronchus and lung,female,black or african american,1932.0,,Alive,,1,28406.0,,Stage IA,610.0,,,610.0,0,Stage I,77.0
+0ea4920f-f4c8-4590-84b3-eb419824e144,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1936.0,,Alive,,1,24241.0,,Stage IB,2973.0,,,2973.0,0,Stage I,66.0
+0fe909ea-d52c-4b71-816f-57f62d4a5744,Acinar Cell Neoplasms,Bronchus and lung,male,white,1950.0,,Alive,,1,22584.0,,Stage IIB,1148.0,,,1148.0,0,Stage II,61.0
+1070ff27-17c9-43dd-a4f6-daa643eb9123,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1955.0,,Dead,702.0,1,20576.0,,Stage IA,100.0,,,702.0,1,Stage I,56.0
+114a34c0-983b-4d90-9181-1823c9637a63,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1933.0,2008.0,Dead,1288.0,1,26444.0,,Stage IB,,,,1288.0,1,Stage I,72.0
+11c2e619-8aeb-4f86-b03b-78f9a8099263,Acinar Cell Neoplasms,Bronchus and lung,male,white,1940.0,,Alive,,1,26305.0,,Stage IA,435.0,,,435.0,0,Stage I,72.0
+12c07138-e3fa-418a-89e3-628da12bc99e,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1943.0,,Alive,,1,25384.0,,Stage IIA,630.0,,,630.0,0,Stage II,69.0
+12ccd581-a921-41bc-bcee-4e9be54532cc,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1926.0,2002.0,Dead,434.0,1,27733.0,,Stage IB,,,,434.0,1,Stage I,75.0
+15340dd3-84ae-49fb-989a-eb212f3e73da,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1946.0,,Alive,,1,23484.0,,Stage IIA,1683.0,,,1683.0,0,Stage II,64.0
+15f12d2c-b834-4bfc-b526-f03bf85bfe96,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1949.0,2006.0,Dead,1778.0,1,19640.0,,Stage IIB,,,,1778.0,1,Stage II,53.0
+16d3c1c1-cf3a-44b6-b564-8ae5464b243d,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1952.0,,Alive,,1,22056.0,,Stage IIIB,651.0,,,651.0,0,Stage III,60.0
+16e64a1e-08b0-4c27-8c69-fa64551f8ca4,Adenomas and Adenocarcinomas,Bronchus and lung,female,not reported,1947.0,2009.0,Dead,3361.0,1,19563.0,,Stage IB,,,,3361.0,1,Stage I,53.0
+17e09b0d-eab2-40ec-ae3c-be9ab63fcef0,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1948.0,,Alive,,1,23257.0,,Stage IA,84.0,,,84.0,0,Stage I,63.0
+18478121-f1d1-4bdd-9511-8ab22f4a0660,Adenomas and Adenocarcinomas,Bronchus and lung,male,not reported,1935.0,,Alive,,1,21832.0,,Stage IIA,7062.0,,,7062.0,0,Stage II,59.0
+1ab7ad70-0f80-41d8-8efa-3baebc8223cc,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1944.0,,Alive,,1,23267.0,,Stage IV,1126.0,,,1126.0,0,Stage IV,63.0
+1b110eb4-a01d-4c50-ba18-77da4dedd549,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1937.0,,Alive,,1,25578.0,,Stage IB,1932.0,,,1932.0,0,Stage I,70.0
+1b31cdb3-1837-49d6-a857-1830f8800299,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1941.0,,Alive,,1,25316.0,,Stage IA,690.0,,,690.0,0,Stage I,69.0
+1c58d9b8-17a2-4fc6-9898-fe6f47bd2c2a,Acinar Cell Neoplasms,Bronchus and lung,male,white,1948.0,,Alive,,1,22305.0,,Stage IIIA,864.0,,,864.0,0,Stage III,61.0
+1d276b62-5e64-48fb-b2ce-5192b511fe37,Adenomas and Adenocarcinomas,Bronchus and lung,male,not reported,,,Alive,,1,,,Stage IB,2368.0,,,2368.0,0,Stage I,
+1d90c9f3-5025-4867-a2f0-e455b6a254fa,Acinar Cell Neoplasms,Bronchus and lung,female,white,1932.0,,Alive,,1,27913.0,,Stage IA,1285.0,,,1285.0,0,Stage I,76.0
+1f0a5312-0590-4230-9da9-fd0cfe693586,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1941.0,,Alive,,1,25746.0,,Stage IA,537.0,,,537.0,0,Stage I,70.0
+1fc81cd4-fa89-4135-8c3c-027ffae82b05,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1959.0,,Alive,,1,18644.0,,Stage IB,863.0,,,863.0,0,Stage I,51.0
+202e5df9-69f2-432c-a59d-cc5aa176e973,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1971.0,,Dead,607.0,1,15266.0,,Stage IV,3.0,,,607.0,1,Stage IV,41.0
+205759a6-6391-491b-9857-0080c3a5871e,Adenomas and Adenocarcinomas,Bronchus and lung,male,not reported,,,Dead,2027.0,1,,,Stage IIB,,,,2027.0,1,Stage II,
+2079155a-d91d-4246-a038-01934a580f32,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1946.0,,Alive,,1,20903.0,,,3674.0,,,3674.0,0,,57.0
+22302e92-fdfa-462a-9249-efdaa26ee5ed,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1953.0,,Alive,,1,21283.0,,Stage IA,723.0,,,723.0,0,Stage I,58.0
+23069f19-eba5-4ea5-ae7d-1ee4399ce7c1,Adenomas and Adenocarcinomas,Bronchus and lung,female,not reported,,,Dead,1516.0,1,,,Stage IIB,,,,1516.0,1,Stage II,
+243c6fd6-5516-46e5-bcef-292d93d7b7d3,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1935.0,,Alive,,1,27693.0,,Stage IA,414.0,,,414.0,0,Stage I,75.0
+258a3a41-211b-4c66-bd3b-ef03014a6967,Acinar Cell Neoplasms,Bronchus and lung,male,white,1932.0,,Alive,,1,29534.0,,Stage IB,133.0,,,133.0,0,Stage I,80.0
+25d4ea9e-f773-4f11-bac9-64efdad73211,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1950.0,,Alive,,1,21760.0,,Stage IA,824.0,,,824.0,0,Stage I,59.0
+26a92e1b-08d8-45cd-af0c-eaf2514808a2,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1945.0,,Alive,,1,24631.0,,Stage IA,435.0,,,435.0,0,Stage I,67.0
+27fceec1-3298-4cdd-a4e6-8f5cf34604f0,Adenomas and Adenocarcinomas,Bronchus and lung,male,black or african american,1957.0,,Alive,,1,19426.0,,Stage IIIA,1013.0,,,1013.0,0,Stage III,53.0
+2923e404-38f2-437a-b57e-23401fbe0273,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1965.0,,Alive,,1,17032.0,,Stage IIA,949.0,,,949.0,0,Stage II,46.0
+2a394996-809f-459f-a647-d209921ccbd2,Adenomas and Adenocarcinomas,Bronchus and lung,male,black or african american,1972.0,,Dead,340.0,1,15162.0,,Stage IIB,305.0,,,340.0,1,Stage II,41.0
+2a43e61e-2151-4c5a-b062-74ce9dfd8d4a,Adenomas and Adenocarcinomas,Bronchus and lung,female,black or african american,1972.0,2012.0,Dead,58.0,1,14681.0,,Stage IV,,,,58.0,1,Stage IV,40.0
+2cd8ea73-cb3f-4b17-9b97-fa12eb03b85b,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1951.0,,Dead,469.0,1,22626.0,,Stage IA,216.0,,,469.0,1,Stage I,61.0
+2f0710f4-827b-45b2-9b7e-c27385b481a7,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1950.0,,Alive,,1,,,Stage IA,2109.0,,,2109.0,0,Stage I,
+301ca6e8-7981-4264-b4ae-38f56f7f9225,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1936.0,2011.0,Dead,2617.0,1,25052.0,,Stage IIB,,,,2617.0,1,Stage II,68.0
+30f276a8-3a4b-4de8-aea0-7f605d100401,Adenomas and Adenocarcinomas,Bronchus and lung,male,asian,1948.0,,Alive,,1,23620.0,,Stage IV,578.0,,,578.0,0,Stage IV,64.0
+7a111b4f-46e9-4e34-8024-0b9fdc5cbcd8,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1942.0,,Alive,,1,25759.0,,Stage IA,741.0,,,741.0,0,Stage I,70.0
+32a7b827-c3f9-4607-ae63-dae8caa2bc97,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1964.0,,Alive,,1,17680.0,,Stage I,578.0,,,578.0,0,Stage I,48.0
+7b0622ab-63ea-483f-ae40-d3ea587bdbba,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1944.0,2008.0,Dead,976.0,1,22720.0,,Stage IV,,,,976.0,1,Stage IV,62.0
+7b89166e-c5b8-481b-aa70-495141499b91,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1948.0,,Alive,,1,23443.0,,Stage IA,938.0,,,938.0,0,Stage I,64.0
+7c4ed533-ee66-48be-a84b-ff8607742818,Adenomas and Adenocarcinomas,Bronchus and lung,male,not reported,1938.0,2006.0,Dead,161.0,1,25069.0,,Stage IIIA,,,,161.0,1,Stage III,68.0
+345aef28-d49b-491b-a337-b1ac55c37d35,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1946.0,,Alive,,1,24313.0,,Stage IA,624.0,,,624.0,0,Stage I,66.0
+34d8e84e-c3e1-417d-8b9b-8563d9fa0f8e,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1932.0,,Dead,124.0,1,29124.0,,Stage IIA,10.0,,,124.0,1,Stage II,79.0
+7e83f9dd-b038-497b-a113-a55605398b7b,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1950.0,,Alive,,1,22635.0,,Stage IA,44.0,,,44.0,0,Stage I,62.0
+36470b30-a3b3-4d28-851b-918a7ff88011,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1944.0,,Dead,719.0,1,24684.0,,Stage IB,47.0,,,719.0,1,Stage I,67.0
+81a0b2ff-a3d3-41bb-9ce6-765e6ae894af,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1949.0,,Alive,,1,21310.0,,Stage IIIA,2488.0,,,2488.0,0,Stage III,58.0
+36ad7fc7-0cc1-4f01-aef1-f89b3cb4feac,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1936.0,,Alive,,1,26704.0,,Stage IB,385.0,,,385.0,0,Stage I,73.0
+84c3ba70-afa7-4b69-be69-7ec8d6022c56,Adenomas and Adenocarcinomas,Bronchus and lung,female,black or african american,1938.0,,Alive,,1,26634.0,,Stage IIIA,1060.0,,,1060.0,0,Stage III,72.0
+383d1253-349f-43b3-bebd-9f1d1cf14b3d,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1937.0,2008.0,Dead,307.0,1,25983.0,,Stage IIIA,,,,307.0,1,Stage III,71.0
+39ab7174-5707-498d-9959-523680e04198,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1942.0,,Alive,,1,25719.0,,Stage IA,596.0,,,596.0,0,Stage I,70.0
+87f1b3df-4bc7-4336-b658-f30ac1c5c796,Acinar Cell Neoplasms,Bronchus and lung,male,white,1940.0,,Alive,,1,26317.0,,Stage IA,830.0,,,830.0,0,Stage I,72.0
+3afa5045-a1ee-4a07-8aad-2e252b2f7d7a,Adenomas and Adenocarcinomas,Bronchus and lung,male,black or african american,1945.0,,Alive,,1,20932.0,,Stage IA,4765.0,,,4765.0,0,Stage I,57.0
+8cc6bcec-65df-46a9-a88c-09762a132857,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1941.0,2006.0,Dead,1501.0,1,22448.0,,Stage IIB,,,,1501.0,1,Stage II,61.0
+3c4ff061-d214-4d1c-8d2e-3034f207c252,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1939.0,,Alive,,1,26415.0,,Stage IB,705.0,,,705.0,0,Stage I,72.0
+3d2aa654-1b5f-4eb4-a1c2-af31f5760069,Adenomas and Adenocarcinomas,Bronchus and lung,male,not reported,1967.0,,Alive,,1,15159.0,,Stage IB,912.0,,,912.0,0,Stage I,41.0
+3daebe75-c6df-478e-8a4c-11186fd5ead9,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1942.0,2012.0,Dead,33.0,1,25898.0,,Stage IA,,,,33.0,1,Stage I,70.0
+3e1df30f-744a-41e9-a169-7dbbff66622e,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1957.0,,Alive,,1,20021.0,,Stage IIIA,184.0,,,184.0,0,Stage III,54.0
+9582b436-145b-4f84-8f7f-8b39b8254cc1,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1937.0,,Dead,656.0,1,27342.0,,Stage IV,170.0,,,656.0,1,Stage IV,74.0
+95fa64b0-91e1-4427-b81a-53c47a053563,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1936.0,,Alive,,1,28063.0,,Stage IIA,599.0,,,599.0,0,Stage II,76.0
+967d6548-5a84-4b7e-bc3f-2e522859fce6,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1933.0,,Alive,,1,28869.0,,Stage IB,287.0,,,287.0,0,Stage I,79.0
+96d93e23-bb0d-46a8-9685-5ed0d6b83059,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1936.0,,Alive,,1,27359.0,,Stage IIIA,747.0,,,747.0,0,Stage III,74.0
+996a0070-e9bf-4601-8ef7-60212108258d,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1952.0,,Alive,,1,,,,930.0,,,930.0,0,,
+9a2a226e-9605-4214-9320-469305e664e6,Adenomas and Adenocarcinomas,Bronchus and lung,female,black or african american,1955.0,,Alive,,1,15065.0,,Stage I,6732.0,,,6732.0,0,Stage I,41.0
+9b132e4f-7e35-4cc5-8711-43ad62b906d0,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1944.0,2007.0,Dead,119.0,1,23067.0,,Stage IV,,,,119.0,1,Stage IV,63.0
+44dec838-b653-42a7-a58b-a1fd232cd68c,Adenomas and Adenocarcinomas,Bronchus and lung,male,not reported,1940.0,,Alive,,1,24837.0,,Stage IB,365.0,,,365.0,0,Stage I,68.0
+47062ad2-ba82-45c8-a871-bdea84f0c405,Adenomas and Adenocarcinomas,Bronchus and lung,female,not reported,1930.0,2005.0,Dead,167.0,1,27603.0,,Stage IV,,,,167.0,1,Stage IV,75.0
+9dda72ec-1698-44e2-b35c-11e9a2704380,Acinar Cell Neoplasms,Bronchus and lung,male,white,1941.0,,Alive,,1,26273.0,,Stage IV,718.0,,,718.0,0,Stage IV,71.0
+472337c2-a2fc-403a-8c17-69511193128b,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1948.0,,Alive,,1,23369.0,,Stage IIIA,139.0,,,139.0,0,Stage III,64.0
+9e22a3af-7f28-4757-8684-ed64a2a27ad1,Acinar Cell Neoplasms,Bronchus and lung,female,white,1946.0,,Alive,,1,24130.0,,Stage IIIA,605.0,,,605.0,0,Stage III,66.0
+474b86d9-d897-467d-85d4-51dfa26ea107,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1943.0,,Alive,,1,23107.0,,Stage IB,2449.0,,,2449.0,0,Stage I,63.0
+a046888c-f153-4f35-a1b6-23dd1691a91a,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1943.0,2004.0,Dead,118.0,1,,,Stage IIB,,,,118.0,1,Stage II,
+4a1d30e8-e93a-41ed-8e54-08eaff6556a7,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1952.0,,Alive,,1,22202.0,,Stage IA,307.0,,,307.0,0,Stage I,60.0
+4addf05f-3668-4b3f-a17f-c0227329ca52,Adenomas and Adenocarcinomas,Bronchus and lung,male,not reported,1940.0,,Alive,,1,24532.0,,Stage IB,1523.0,,,1523.0,0,Stage I,67.0
+a3f6bc1c-19ab-4eeb-a9ac-3d2fac850bde,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1945.0,,Alive,,1,24209.0,,Stage IV,947.0,,,947.0,0,Stage IV,66.0
+4e7b2af4-b158-41a7-be22-bea227a759e6,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1934.0,,Dead,952.0,1,28458.0,,Stage IIIA,53.0,,,952.0,1,Stage III,77.0
+a5f2576a-d628-47de-a5df-76a4f3105dcc,Adenomas and Adenocarcinomas,Bronchus and lung,male,black or african american,1957.0,,Alive,,1,20780.0,,Stage IIA,664.0,,,664.0,0,Stage II,56.0
+501c987e-d1eb-48a9-89eb-72a5062c90b4,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1948.0,2007.0,Dead,179.0,1,21742.0,,Stage IIIB,,,,179.0,1,Stage III,59.0
+a815619f-dbba-469f-a1f7-dfbd51cd86c5,Adenomas and Adenocarcinomas,Bronchus and lung,male,black or african american,1937.0,,Dead,442.0,1,27414.0,,Stage IIA,266.0,,,442.0,1,Stage II,75.0
+a816e355-be6f-4d16-b051-b6d86ed8cded,"Cystic, Mucinous and Serous Neoplasms",Bronchus and lung,female,white,1948.0,,Alive,,1,23117.0,,Stage IIB,944.0,,,944.0,0,Stage II,63.0
+528a0fce-0719-4b19-a69d-3f18681696c5,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1964.0,,Dead,116.0,1,17607.0,,Stage IIA,30.0,,,116.0,1,Stage II,48.0
+532c1852-76dd-489f-9380-36766d6e3c34,Adenomas and Adenocarcinomas,Bronchus and lung,female,black or african american,1950.0,,Dead,625.0,1,22619.0,,Stage IIIA,0.0,,,625.0,1,Stage III,61.0
+a9644274-13bb-4228-9b4f-14260ccc26eb,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1927.0,,Alive,,1,30327.0,,Stage IIIA,775.0,,,775.0,0,Stage III,83.0
+54a0e4d7-c274-4569-9c25-45bbe26d7f21,"Cystic, Mucinous and Serous Neoplasms",Bronchus and lung,male,white,1924.0,,Alive,,1,,,Stage IIB,2823.0,,,2823.0,0,Stage II,
+abd6647b-d2eb-404d-8283-443e92addf55,Adenomas and Adenocarcinomas,Bronchus and lung,female,white,1939.0,,Alive,,1,26837.0,,Stage IA,889.0,,,889.0,0,Stage I,73.0
+5510ad32-62fd-4adc-964a-ae4e997c2f4b,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1952.0,,Dead,375.0,1,22091.0,,Stage IV,66.0,,,375.0,1,Stage IV,60.0
+552712d3-da16-441e-ba93-11810793d598,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1940.0,,Alive,,1,26289.0,,Stage IA,129.0,,,129.0,0,Stage I,72.0
+ae39e358-08d7-4367-ae68-82b469e791e4,Adenomas and Adenocarcinomas,Bronchus and lung,male,white,1951.0,,Dead,922.0,1,21614.0,,Stage IIIA,40.0,,,922.0,1,Stage III,59.0
