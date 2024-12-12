@@ -3,12 +3,15 @@ import os
 import numpy as np
 import pandas as pd
 import requests
+from sksurv.ensemble import GradientBoostingSurvivalAnalysis
 from sklearn.decomposition import PCA
+from sklearn.feature_selection import SelectFromModel
 import torch
 from tqdm import tqdm
 
 CASES_ENDPT = "https://api.gdc.cancer.gov/cases"
 FILES_ENDPT = "https://api.gdc.cancer.gov/files"
+SEED = 42
 
 
 def pull_cases(project_ids: list[str] = ["TCGA-LUAD"]):
@@ -175,7 +178,7 @@ def download_file(file_id, file_type, dir, file_size=None) -> str:
     url = f"https://api.gdc.cancer.gov/data/{file_id}"
     path = os.path.join(os.getcwd(), dir, file_id + f'.{file_type.lower()}')
     if os.path.exists(path):
-        print('Image already downloaded!')
+        print('File already downloaded!')
         return path
 
     # Make the request to the GDC API
@@ -206,36 +209,58 @@ def preprocess_demo(X_demo):
     return X_demo.astype(float)
 
 
-def preprocess_wsi(X_wsi, n_components=50):
-    # Run pca
+def preprocess_wsi(X_wsi, y, n_feats=10, n_components=50):
+    assert n_feats <= n_components
     index = X_wsi.index
-    pca = PCA(n_components=n_components)
-    X_wsi = pca.fit_transform(X_wsi)
-    return pd.DataFrame(
-        X_wsi,
+    # PCA
+    X_wsi = pd.DataFrame(
+        PCA(n_components=n_components, random_state=SEED).fit_transform(X_wsi),
         columns=[f'wsi_pca_{i}' for i in range(1, n_components + 1)],
+        index=index
+    )
+    # Feature selection
+    model_select = SelectFromModel(
+        GradientBoostingSurvivalAnalysis(n_estimators=200, random_state=SEED), threshold=-np.inf,
+        max_features=n_feats
+    ).fit(X_wsi, y)
+    return pd.DataFrame(
+        model_select.transform(X_wsi),
+        columns=model_select.get_feature_names_out(),
         index=index
     )
 
 
-def preprocess_omics(X_omics, n_components=50):
-    # Run pca
+def preprocess_omics(X_omics, y, n_feats=10, n_components=50):
+    assert n_feats <= n_components
     index = X_omics.index
-    pca = PCA(n_components=n_components)
-    X_omics = pca.fit_transform(X_omics)
-    return pd.DataFrame(
-        X_omics,
+    # PCA
+    X_omics = pd.DataFrame(
+        PCA(n_components=n_components, random_state=SEED).fit_transform(X_omics),
         columns=[f'omics_pca_{i}' for i in range(1, n_components + 1)],
+        index=index
+    )
+    # Feature selection
+    model_select = SelectFromModel(
+        GradientBoostingSurvivalAnalysis(n_estimators=200, random_state=SEED), threshold=-np.inf,
+        max_features=n_feats
+    ).fit(X_omics, y)
+    return pd.DataFrame(
+        model_select.transform(X_omics),
+        columns=model_select.get_feature_names_out(),
         index=index
     )
 
 
 def load_dataset(
     case_file='data/case_data_filtered.csv', include_demo=False, include_wsi=False,
-    include_omics=False, wsi_n_components=10, omics_n_components=10
+    include_omics=False, wsi_n_feats=10, omics_n_feats=10
 ):
     cases = pd.read_csv(case_file)
     cases = cases[cases['survival_time'] > 0].set_index('case_id')
+    y = np.array(
+        [((row['event'] == 1), row['survival_time']) for _, row in cases.iterrows()],
+        dtype=[('event', bool), ('survival_time', float)]
+    )
     if include_demo:
         demo_cols = ['disease_type', 'gender', 'race', 'age_at_diagnosis_years',
                      'ajcc_pathologic_stage_coarse']
@@ -248,7 +273,7 @@ def load_dataset(
         X_wsi = pd.DataFrame(
             {case_id: embs[case_id] for case_id in cases.index if case_id in embs}
         ).T
-        X_wsi = preprocess_wsi(X_wsi, wsi_n_components)
+        X_wsi = preprocess_wsi(X_wsi, y, n_feats=wsi_n_feats, n_components=50)
     else:
         X_wsi = None
     if include_omics:
@@ -256,23 +281,18 @@ def load_dataset(
         X_omics = pd.DataFrame(
             {case_id: embs[case_id].numpy() for case_id in cases.index if case_id in embs}
         ).T
-        X_omics = preprocess_omics(X_omics, omics_n_components)
+        X_omics = preprocess_omics(X_omics, y, n_feats=omics_n_feats, n_components=50)
     else:
         X_omics = None
     X = pd.concat([x for x in [X_demo, X_wsi, X_omics] if x is not None], join='inner', axis=1)
-    y = np.array(
-        [
-            ((cases.loc[case_id, 'event'] == 1), cases.loc[case_id, 'survival_time'])
-            for case_id in X.index
-        ],
-        dtype=[('event', bool), ('survival_time', float)]
-    )
     return X, y
 
 
 def download_genomics(case_file):
     cases = pd.read_csv(case_file)
     for case in tqdm(cases['case_id'], unit='cases', colour='green'):
+        if os.path.exists(f'data/omics/gene_exp/{case}.tsv'):
+            continue
         files = get_case_files(case)
         for file in files:
             if file['data_type'] == 'Gene Expression Quantification':
@@ -280,7 +300,9 @@ def download_genomics(case_file):
                                      file['file_size'])
                 # rename file to case_id
                 os.rename(path, os.path.join(os.path.dirname(path), case + '.tsv'))
-                continue
+                break
+        else:
+            print(f'No gene expression data found for {case}.')
 
 
 def compute_average_tpm_per_gene():
@@ -317,6 +339,6 @@ def get_gene_embeds(top_k=10):
 
 
 if __name__ == '__main__':
-    # download_genomics('data/case_data_filtered.csv')
+    download_genomics('data/case_data_filtered.csv')
     # compute_average_tpm_per_gene()
-    get_gene_embeds()
+    # get_gene_embeds()
